@@ -1,0 +1,3247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790ad4d2030f140c9472624b1f7b5078, type: 3}
+  m_Name: Classic
+  m_EditorClassIdentifier:
+  identifier: 0
+  sceneNamePrefix:
+  numberOfLevels: 75
+  localizedNameKey: levels_button_classic
+  logo: {fileID: 21300000, guid: 5f76a9d034fe0b84eae572b67efc3691, type: 2}
+  ambienceConfiguration: {fileID: 11400000, guid: e897d12f2ee167441b2e222bb489cee7, type: 2}
+  _defaultBoosterSelection: {fileID: 11400000, guid: 30f3ed7102fcc2e499ef387de229f30a, type: 2}
+  levelConfigurations:
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 2124915324
+        hiddenValue: 2124915301
+        inited: 1
+        fakeValue: 25
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 149
+        hiddenValue: 32
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 2029319093
+        hiddenValue: 2029319093
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 125
+        hiddenValue: 200
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1795895272
+        hiddenValue: 1795895272
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2127982765
+        hiddenValue: 1030766765
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 11400000, guid: cbbdd3ddb68de8c46a257afa6dedbec9, type: 2}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1252548493
+        hiddenValue: 1252548500
+        inited: 1
+        fakeValue: 25
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 232
+        hiddenValue: 93
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 2095801034
+        hiddenValue: 2095801034
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 157
+        hiddenValue: 40
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1159546711
+        hiddenValue: 1159546711
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1691529711
+        hiddenValue: 665928943
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 11400000, guid: cbbdd3ddb68de8c46a257afa6dedbec9, type: 2}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1185915820
+        hiddenValue: 1185915829
+        inited: 1
+        fakeValue: 25
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 159
+        hiddenValue: 42
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1129200998
+        hiddenValue: 1129200998
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 164
+        hiddenValue: 17
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1587800023
+        hiddenValue: 1587800023
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1828395355
+        hiddenValue: 790195547
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 11400000, guid: cbbdd3ddb68de8c46a257afa6dedbec9, type: 2}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1771476732
+        hiddenValue: 1771476709
+        inited: 1
+        fakeValue: 25
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 147
+        hiddenValue: 38
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1105048901
+        hiddenValue: 1105048901
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 217
+        hiddenValue: 108
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1290926795
+        hiddenValue: 1290926795
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1455540411
+        hiddenValue: 365451195
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 11400000, guid: cbbdd3ddb68de8c46a257afa6dedbec9, type: 2}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1238264435
+        hiddenValue: 1238264435
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 130
+        hiddenValue: 87
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1917277095
+        hiddenValue: 1917277094
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 254
+        hiddenValue: 75
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1967817547
+        hiddenValue: 1967817544
+        inited: 1
+        fakeValue: 3
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1163458060
+        hiddenValue: 116837900
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 2007422889
+        hiddenValue: 2007422892
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 208
+        hiddenValue: 101
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1542251932
+        hiddenValue: 1542251932
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 203
+        hiddenValue: 126
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1140425883
+        hiddenValue: 1140425883
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2027644898
+        hiddenValue: 996625890
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1628314414
+        hiddenValue: 1628314404
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 205
+        hiddenValue: 120
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1464538124
+        hiddenValue: 1464538124
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 156
+        hiddenValue: 41
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1000985396
+        hiddenValue: 1000985396
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1669576223
+        hiddenValue: 548803871
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1653001197
+        hiddenValue: 1653001186
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 147
+        hiddenValue: 38
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1881707796
+        hiddenValue: 1881707796
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 129
+        hiddenValue: 52
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1798398873
+        hiddenValue: 1798398873
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1774947117
+        hiddenValue: 713776429
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1378772422
+        hiddenValue: 1378772434
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 170
+        hiddenValue: 31
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1524568315
+        hiddenValue: 1524568315
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 157
+        hiddenValue: 40
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1241253938
+        hiddenValue: 1241253938
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2084699321
+        hiddenValue: 1073534905
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1588429715
+        hiddenValue: 1588429715
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 165
+        hiddenValue: 112
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1825747172
+        hiddenValue: 1825747172
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 135
+        hiddenValue: 50
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2012693353
+        hiddenValue: 2012693358
+        inited: 1
+        fakeValue: 7
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1028779400
+        hiddenValue: 2129512328
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1133022887
+        hiddenValue: 1133022882
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 221
+        hiddenValue: 104
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1816861904
+        hiddenValue: 1816861904
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 170
+        hiddenValue: 31
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1519144464
+        hiddenValue: 1519144464
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2135766505
+        hiddenValue: 1010162665
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1547728146
+        hiddenValue: 1547728152
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 206
+        hiddenValue: 123
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1180737426
+        hiddenValue: 1180737426
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 211
+        hiddenValue: 102
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1111175115
+        hiddenValue: 1111175115
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1061401068
+        hiddenValue: 2092029420
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1979035803
+        hiddenValue: 1979035796
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 252
+        hiddenValue: 73
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1051983520
+        hiddenValue: 1051983520
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 244
+        hiddenValue: 65
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1039384174
+        hiddenValue: 1039384174
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1086234488
+        hiddenValue: 60762232
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1126053802
+        hiddenValue: 1126053822
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 213
+        hiddenValue: 96
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1875164971
+        hiddenValue: 1875164970
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 177
+        hiddenValue: 4
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1775154085
+        hiddenValue: 1775154085
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1691704571
+        hiddenValue: 660358139
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1696218573
+        hiddenValue: 1696218573
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 190
+        hiddenValue: 107
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 2070422788
+        hiddenValue: 2070422790
+        inited: 1
+        fakeValue: 2
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 142
+        hiddenValue: 59
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1293828572
+        hiddenValue: 1293828569
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1807950364
+        hiddenValue: 673338652
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1455117292
+        hiddenValue: 1455117289
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 174
+        hiddenValue: 27
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1621541061
+        hiddenValue: 1621541061
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 251
+        hiddenValue: 78
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1863546009
+        hiddenValue: 1863546009
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2062350121
+        hiddenValue: 972519977
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1135730937
+        hiddenValue: 1135730931
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 177
+        hiddenValue: 4
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1682386015
+        hiddenValue: 1682386015
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 183
+        hiddenValue: 2
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1686676277
+        hiddenValue: 1686676277
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1517431183
+        hiddenValue: 422175887
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1057966125
+        hiddenValue: 1057966114
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 223
+        hiddenValue: 106
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 2082747064
+        hiddenValue: 2082747065
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 248
+        hiddenValue: 77
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1696266749
+        hiddenValue: 1696266749
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1529234280
+        hiddenValue: 407089256
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1705410674
+        hiddenValue: 1705410662
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 197
+        hiddenValue: 112
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1150541436
+        hiddenValue: 1150541437
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 248
+        hiddenValue: 77
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1375955270
+        hiddenValue: 1375955270
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1307697140
+        hiddenValue: 249522164
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1841258291
+        hiddenValue: 1841258291
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 219
+        hiddenValue: 14
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1948167646
+        hiddenValue: 1948167646
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 162
+        hiddenValue: 23
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1115811912
+        hiddenValue: 1115811913
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1870499037
+        hiddenValue: 747432925
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1951663422
+        hiddenValue: 1951663419
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 176
+        hiddenValue: 5
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1381231634
+        hiddenValue: 1381231635
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 195
+        hiddenValue: 118
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1179490572
+        hiddenValue: 1179490572
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1420482294
+        hiddenValue: 399916278
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1291459174
+        hiddenValue: 1291459180
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 150
+        hiddenValue: 35
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1825019296
+        hiddenValue: 1825019297
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 126
+        hiddenValue: 203
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2061958396
+        hiddenValue: 2061958396
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1991044754
+        hiddenValue: 904805010
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1390335378
+        hiddenValue: 1390335389
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 194
+        hiddenValue: 119
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1987531457
+        hiddenValue: 1987531457
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 109
+        hiddenValue: 216
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2059939265
+        hiddenValue: 2059939265
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1492849583
+        hiddenValue: 454258095
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1619735439
+        hiddenValue: 1619735451
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 224
+        hiddenValue: 85
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1747127420
+        hiddenValue: 1747127420
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 200
+        hiddenValue: 125
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1255200908
+        hiddenValue: 1255200908
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1385837536
+        hiddenValue: 288558304
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1137356936
+        hiddenValue: 1137356936
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 181
+        hiddenValue: 96
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1407457244
+        hiddenValue: 1407457245
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 234
+        hiddenValue: 95
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1144966352
+        hiddenValue: 1144966360
+        inited: 1
+        fakeValue: 8
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1245118160
+        hiddenValue: 167682256
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1548504685
+        hiddenValue: 1548504680
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 226
+        hiddenValue: 87
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1442613071
+        hiddenValue: 1442613071
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 174
+        hiddenValue: 27
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1169433461
+        hiddenValue: 1169433461
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1963013655
+        hiddenValue: 909547287
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 2027207673
+        hiddenValue: 2027207667
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 204
+        hiddenValue: 121
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1898617857
+        hiddenValue: 1898617857
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 126
+        hiddenValue: 203
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1318945287
+        hiddenValue: 1318945287
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1647110447
+        hiddenValue: 568965679
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1351665775
+        hiddenValue: 1351665760
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 170
+        hiddenValue: 31
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 2008270771
+        hiddenValue: 2008270771
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 162
+        hiddenValue: 23
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1724273220
+        hiddenValue: 1724273220
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1353736690
+        hiddenValue: 325134066
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1707943931
+        hiddenValue: 1707943919
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 170
+        hiddenValue: 31
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1314694169
+        hiddenValue: 1314694169
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 215
+        hiddenValue: 98
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2079251074
+        hiddenValue: 2079251074
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1100406433
+        hiddenValue: 48103585
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1517635129
+        hiddenValue: 1517635129
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 145
+        hiddenValue: 68
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1699670065
+        hiddenValue: 1699670067
+        inited: 1
+        fakeValue: 2
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 158
+        hiddenValue: 43
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1194964626
+        hiddenValue: 1194964628
+        inited: 1
+        fakeValue: 6
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1878028946
+        hiddenValue: 745694866
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1057849163
+        hiddenValue: 1057849166
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 245
+        hiddenValue: 64
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1099570056
+        hiddenValue: 1099570056
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 108
+        hiddenValue: 217
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2115701317
+        hiddenValue: 2115701317
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1205480018
+        hiddenValue: 69880914
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 2025454736
+        hiddenValue: 2025454746
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 156
+        hiddenValue: 41
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1876512225
+        hiddenValue: 1876512225
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 191
+        hiddenValue: 10
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1200748091
+        hiddenValue: 1200748091
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1480257803
+        hiddenValue: 468823051
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1311588179
+        hiddenValue: 1311588188
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 216
+        hiddenValue: 109
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 2146752090
+        hiddenValue: 2146752090
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 227
+        hiddenValue: 86
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1635653251
+        hiddenValue: 1635653251
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1655082777
+        hiddenValue: 563032089
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1591774240
+        hiddenValue: 1591774260
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 235
+        hiddenValue: 94
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1945108005
+        hiddenValue: 1945108005
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 199
+        hiddenValue: 114
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2096027074
+        hiddenValue: 2096027074
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2062930069
+        hiddenValue: 969958293
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1355871675
+        hiddenValue: 1355871675
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 148
+        hiddenValue: 65
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 2113317284
+        hiddenValue: 2113317284
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 224
+        hiddenValue: 85
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1794767516
+        hiddenValue: 1794767509
+        inited: 1
+        fakeValue: 9
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1187567828
+        hiddenValue: 98066132
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1738741566
+        hiddenValue: 1738741563
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 150
+        hiddenValue: 35
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1899216934
+        hiddenValue: 1899216934
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 234
+        hiddenValue: 95
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1554506401
+        hiddenValue: 1554506401
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1345233228
+        hiddenValue: 329365580
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1520180733
+        hiddenValue: 1520180727
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 228
+        hiddenValue: 81
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1149842565
+        hiddenValue: 1149842565
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 153
+        hiddenValue: 44
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1901700647
+        hiddenValue: 1901700647
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2105706928
+        hiddenValue: 1049171120
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1999065927
+        hiddenValue: 1999065928
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 128
+        hiddenValue: 53
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1348446330
+        hiddenValue: 1348446330
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 156
+        hiddenValue: 41
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1083799275
+        hiddenValue: 1083799275
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1901005241
+        hiddenValue: 839506361
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1981858244
+        hiddenValue: 1981858256
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 208
+        hiddenValue: 101
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1219302978
+        hiddenValue: 1219302978
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 138
+        hiddenValue: 63
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1588823660
+        hiddenValue: 1588823660
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1152738071
+        hiddenValue: 123937559
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1639372086
+        hiddenValue: 1639372086
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 124
+        hiddenValue: 169
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1307413112
+        hiddenValue: 1307413113
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 171
+        hiddenValue: 30
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2144556177
+        hiddenValue: 2144556179
+        inited: 1
+        fakeValue: 2
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1872016395
+        hiddenValue: 749994507
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 2002047503
+        hiddenValue: 2002047498
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 176
+        hiddenValue: 5
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1741044729
+        hiddenValue: 1741044729
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 232
+        hiddenValue: 93
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1403776507
+        hiddenValue: 1403776507
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1315776496
+        hiddenValue: 220724208
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1578429024
+        hiddenValue: 1578429034
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 248
+        hiddenValue: 77
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1000728126
+        hiddenValue: 1000728126
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 130
+        hiddenValue: 55
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2145615306
+        hiddenValue: 2145615306
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1523626699
+        hiddenValue: 431113931
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1037187948
+        hiddenValue: 1037187939
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 247
+        hiddenValue: 66
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1550619487
+        hiddenValue: 1550619487
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 229
+        hiddenValue: 80
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1562738455
+        hiddenValue: 1562738455
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1755878136
+        hiddenValue: 731004664
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1036143202
+        hiddenValue: 1036143222
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 119
+        hiddenValue: 194
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1948152468
+        hiddenValue: 1948152468
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 238
+        hiddenValue: 91
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1926214313
+        hiddenValue: 1926214313
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2016487412
+        hiddenValue: 992454644
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1685504886
+        hiddenValue: 1685504886
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 163
+        hiddenValue: 118
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1571235199
+        hiddenValue: 1571235197
+        inited: 1
+        fakeValue: 2
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 247
+        hiddenValue: 66
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1427589966
+        hiddenValue: 1427589961
+        inited: 1
+        fakeValue: 7
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2143246796
+        hiddenValue: 1012476364
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1724354118
+        hiddenValue: 1724354115
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 191
+        hiddenValue: 10
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1047708420
+        hiddenValue: 1047708420
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 104
+        hiddenValue: 221
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2099625765
+        hiddenValue: 2099625765
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1455293149
+        hiddenValue: 352463069
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1438512497
+        hiddenValue: 1438512507
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 110
+        hiddenValue: 219
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1159744757
+        hiddenValue: 1159744757
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 129
+        hiddenValue: 52
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1943989287
+        hiddenValue: 1943989287
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1166588958
+        hiddenValue: 112991774
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1539332327
+        hiddenValue: 1539332328
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 173
+        hiddenValue: 24
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1147263382
+        hiddenValue: 1147263383
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 187
+        hiddenValue: 14
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1193284770
+        hiddenValue: 1193284770
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1731146075
+        hiddenValue: 607238491
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1671846958
+        hiddenValue: 1671846970
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 150
+        hiddenValue: 35
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1749556749
+        hiddenValue: 1749556749
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 111
+        hiddenValue: 218
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1269862003
+        hiddenValue: 1269862003
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1010482919
+        hiddenValue: 2143202535
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 2004910083
+        hiddenValue: 2004910083
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 233
+        hiddenValue: 60
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1238115230
+        hiddenValue: 1238115230
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 197
+        hiddenValue: 112
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1302407272
+        hiddenValue: 1302407264
+        inited: 1
+        fakeValue: 8
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2112528606
+        hiddenValue: 1050705118
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 2010298080
+        hiddenValue: 2010298085
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 195
+        hiddenValue: 118
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1990705041
+        hiddenValue: 1990705040
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 188
+        hiddenValue: 9
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1653989854
+        hiddenValue: 1653989854
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1202555911
+        hiddenValue: 76299015
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 2044878937
+        hiddenValue: 2044878931
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 193
+        hiddenValue: 116
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1654258303
+        hiddenValue: 1654258303
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 173
+        hiddenValue: 24
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1638645857
+        hiddenValue: 1638645857
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1252780648
+        hiddenValue: 166346088
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1855290473
+        hiddenValue: 1855290470
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 139
+        hiddenValue: 62
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1326364637
+        hiddenValue: 1326364637
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 222
+        hiddenValue: 107
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1692947765
+        hiddenValue: 1692947765
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1685200110
+        hiddenValue: 656205038
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1766592943
+        hiddenValue: 1766592955
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 179
+        hiddenValue: 6
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1724666614
+        hiddenValue: 1724666614
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 127
+        hiddenValue: 202
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1793546843
+        hiddenValue: 1793546843
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1802629680
+        hiddenValue: 687007536
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1246616114
+        hiddenValue: 1246616114
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 175
+        hiddenValue: 122
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1214287899
+        hiddenValue: 1214287898
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 167
+        hiddenValue: 18
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1223065026
+        hiddenValue: 1223065027
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1350364651
+        hiddenValue: 334359275
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1745133813
+        hiddenValue: 1745133808
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 189
+        hiddenValue: 8
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1871557384
+        hiddenValue: 1871557384
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 241
+        hiddenValue: 68
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1823899705
+        hiddenValue: 1823899705
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1136938011
+        hiddenValue: 5001755
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1026008350
+        hiddenValue: 1026008340
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 121
+        hiddenValue: 204
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1309134114
+        hiddenValue: 1309134114
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 179
+        hiddenValue: 6
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1948753440
+        hiddenValue: 1948753440
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1198680127
+        hiddenValue: 73983039
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1979550516
+        hiddenValue: 1979550523
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 222
+        hiddenValue: 107
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1164854877
+        hiddenValue: 1164854877
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 227
+        hiddenValue: 86
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1928034209
+        hiddenValue: 1928034209
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1442557818
+        hiddenValue: 380595578
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1355708281
+        hiddenValue: 1355708269
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 134
+        hiddenValue: 51
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1693153093
+        hiddenValue: 1693153092
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 109
+        hiddenValue: 216
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1662127998
+        hiddenValue: 1662127998
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1210422251
+        hiddenValue: 194229227
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1632042292
+        hiddenValue: 1632042292
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 121
+        hiddenValue: 172
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1401451100
+        hiddenValue: 1401451102
+        inited: 1
+        fakeValue: 2
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 196
+        hiddenValue: 113
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1606577633
+        hiddenValue: 1606577637
+        inited: 1
+        fakeValue: 4
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1347928052
+        hiddenValue: 331334132
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1397797710
+        hiddenValue: 1397797707
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 198
+        hiddenValue: 115
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1645876900
+        hiddenValue: 1645876900
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 120
+        hiddenValue: 205
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1472468340
+        hiddenValue: 1472468340
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1380534451
+        hiddenValue: 289988531
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1594969853
+        hiddenValue: 1594969847
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 181
+        hiddenValue: 0
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1814702000
+        hiddenValue: 1814702000
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 128
+        hiddenValue: 53
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1065577238
+        hiddenValue: 1065577238
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1315839533
+        hiddenValue: 220133421
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1816059365
+        hiddenValue: 1816059370
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 249
+        hiddenValue: 76
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1349724210
+        hiddenValue: 1349724210
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 118
+        hiddenValue: 195
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1230424018
+        hiddenValue: 1230424018
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1674540683
+        hiddenValue: 544627083
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1794916923
+        hiddenValue: 1794916911
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 171
+        hiddenValue: 30
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1206290492
+        hiddenValue: 1206290492
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 151
+        hiddenValue: 34
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1310380381
+        hiddenValue: 1310380381
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1206670375
+        hiddenValue: 72645159
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1637806483
+        hiddenValue: 1637806483
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 188
+        hiddenValue: 105
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1600709765
+        hiddenValue: 1600709765
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 231
+        hiddenValue: 82
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1823167658
+        hiddenValue: 1823167657
+        inited: 1
+        fakeValue: 3
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1970783029
+        hiddenValue: 918806837
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1465760794
+        hiddenValue: 1465760799
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 207
+        hiddenValue: 122
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1777187650
+        hiddenValue: 1777187650
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 209
+        hiddenValue: 100
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1119961343
+        hiddenValue: 1119961343
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1655508701
+        hiddenValue: 554580957
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1863377195
+        hiddenValue: 1863377185
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 209
+        hiddenValue: 100
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1782165438
+        hiddenValue: 1782165438
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 104
+        hiddenValue: 221
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1483236800
+        hiddenValue: 1483236800
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1553801937
+        hiddenValue: 522324945
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1858832470
+        hiddenValue: 1858832473
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 100
+        hiddenValue: 209
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1615512387
+        hiddenValue: 1615512387
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 126
+        hiddenValue: 203
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1561372476
+        hiddenValue: 1561372476
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1170788065
+        hiddenValue: 114188001
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1091254893
+        hiddenValue: 1091254905
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 247
+        hiddenValue: 66
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1097465089
+        hiddenValue: 1097465089
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 200
+        hiddenValue: 125
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1646238975
+        hiddenValue: 1646238975
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1504136742
+        hiddenValue: 441332006
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 2136922593
+        hiddenValue: 2136922593
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 244
+        hiddenValue: 33
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1212302195
+        hiddenValue: 1212302194
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 160
+        hiddenValue: 21
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2062385716
+        hiddenValue: 2062385713
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1462717136
+        hiddenValue: 340441552
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1296779205
+        hiddenValue: 1296779200
+        inited: 1
+        fakeValue: 5
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 159
+        hiddenValue: 42
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1187595722
+        hiddenValue: 1187595722
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 100
+        hiddenValue: 209
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1108518668
+        hiddenValue: 1108518668
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 2104126840
+        hiddenValue: 1047395448
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1534132051
+        hiddenValue: 1534132057
+        inited: 1
+        fakeValue: 10
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 123
+        hiddenValue: 206
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1788366984
+        hiddenValue: 1788366984
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 127
+        hiddenValue: 202
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2095875513
+        hiddenValue: 2095875513
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1763909588
+        hiddenValue: 706721236
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1417669407
+        hiddenValue: 1417669392
+        inited: 1
+        fakeValue: 15
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 134
+        hiddenValue: 51
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1888997478
+        hiddenValue: 1888997478
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 220
+        hiddenValue: 105
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 2088205612
+        hiddenValue: 2088205612
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1376496208
+        hiddenValue: 296394064
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1473113239
+        hiddenValue: 1473113219
+        inited: 1
+        fakeValue: 20
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 251
+        hiddenValue: 78
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1597636342
+        hiddenValue: 1597636342
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 232
+        hiddenValue: 93
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1209975489
+        hiddenValue: 1209975489
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1583164392
+        hiddenValue: 489409512
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}
+  - rewards:
+      _coinAmount:
+        currentCryptoKey: 1535249550
+        hiddenValue: 1535249550
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _awardChest:
+        currentCryptoKey: 252
+        hiddenValue: 41
+        inited: 1
+        fakeValue: 1
+        fakeValueActive: 1
+      _chestTier:
+        currentCryptoKey: 1413766034
+        hiddenValue: 1413766032
+        inited: 1
+        fakeValue: 2
+        fakeValueActive: 1
+      _awardBoosters:
+        currentCryptoKey: 214
+        hiddenValue: 99
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      _boosterType:
+        currentCryptoKey: 1445425825
+        hiddenValue: 1445425831
+        inited: 1
+        fakeValue: 6
+        fakeValueActive: 1
+      _boosterDurationSeconds:
+        currentCryptoKey: 1554722541
+        hiddenValue: 523124205
+        hiddenValueOldByte4:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+    overrideBoosterSelection: {fileID: 0}

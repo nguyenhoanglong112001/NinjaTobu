@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyDeath : MonoBehaviour
+{
+    [SerializeField] private GameObject effectprefab;
+    [SerializeField] private SpriteRenderer[] sprite;
+    [SerializeField] private AudioSource deathaudio;
+    private GameObject enemy;
+    // Start is called before the first frame update
+    void Start()
+    {
+        deathaudio = GameObject.Find("EnemyDeath").GetComponent<AudioSource>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void Death()
+    {
+        deathaudio.Play();
+        StartCoroutine(StartEffect());
+    }
+    IEnumerator StartEffect()
+    {
+        if (enemy == null)
+        {
+            Destroy(gameObject);
+            enemy = Instantiate(effectprefab, transform.position, Quaternion.identity);
+            enemy.GetComponentInChildren<ParticleSystem>().Play();
+            foreach(var spr in sprite)
+            {
+                spr.enabled = false;
+            }
+            yield return new WaitForSeconds(1.0f);
+            Destroy(enemy);
+        }
+    }
+}
