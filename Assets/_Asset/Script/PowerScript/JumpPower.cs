@@ -24,6 +24,10 @@ public class JumpPower : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            if(triplesound!=null)
+            {
+                triplesound.Play();
+            }
             if (jumpeffect == null)
             {
                 jumpeffect = Instantiate(JumpEffect, pointtransform.position, Quaternion.identity);

@@ -10,17 +10,35 @@ public class Coin : MonoBehaviour
     [SerializeField] private SpriteRenderer coindis;
     [SerializeField] private PowerCheck check;
     [SerializeField] private AudioSource coinsound;
+    [SerializeField] private GetIntData getdata;
     private GameObject effect;
     // Start is called before the first frame update
     void Start()
     {
         check = GameObject.FindWithTag("Player").GetComponent<PowerCheck>();
-        coin = GameObject.Find("coinnum").GetComponent<CoinUpdate>();
-        coinsound = GameObject.Find("CollectCoinSound").GetComponent<AudioSource>();
+        if(IsObjectActive("coinnum"))
+        {
+            coin = GameObject.Find("coinnum").GetComponent<CoinUpdate>();
+        }
+        getdata = GameObject.FindWithTag("Data").GetComponent<GetIntData>();
+        if (getdata.GetData("sound",0) == 1)
+        {
+            coinsound = GameObject.Find("CollectCoinSound").GetComponent<AudioSource>();
+        }
         if (!check.DoubleCoinCheck())
         {
             coin.SetCoinPoint(1);
         }
+    }
+
+    public bool IsObjectActive(string objectName)
+    {
+        GameObject obj = GameObject.Find(objectName);
+        if (obj != null)
+        {
+            return obj.activeSelf;
+        }
+        return false;
     }
 
     // Update is called once per frame
@@ -33,11 +51,13 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player") || collision.CompareTag("MonkeyCollector"))
         {
-            coinsound.Play();
             coin.UpdateCoin(coin.GetCoinPoint());
-            Debug.Log(coin.GetCoinPoint());
             StartCoroutine(StartEffect());
             Destroy(gameObject);
+            if (coinsound != null)
+            {
+                coinsound.Play();
+            }
         }
     }
 

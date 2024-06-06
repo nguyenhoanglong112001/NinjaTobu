@@ -1,3 +1,4 @@
+using GooglePlayGames;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,7 +43,20 @@ public class EndGameUI : MonoBehaviour
             {
                 Social.ReportScore((long)score.GetScore(), GPGSIds.leaderboard_ninjatobuscore, LeaderboardUpdate);
             }
-            
+        }
+        if(Social.localUser.authenticated)
+        {
+            PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_further, (int)Mathf.Round(score.GetScore()), (result) =>
+            {
+                if (result)
+                {
+                    Debug.Log("success");
+                }
+                else
+                {
+                    Debug.Log("failed");
+                }
+            });
         }
     }
 

@@ -144,7 +144,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: a8745f705042d654ebe02b45aa2df4cf, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -237,6 +237,8 @@ MonoBehaviour:
   sprite:
   - {fileID: 6964776858161891029}
   - {fileID: 6964776857021273712}
+  deathaudio: {fileID: 0}
+  data: {fileID: 0}
 --- !u!114 &6964776857021273726
 MonoBehaviour:
   m_ObjectHideFlags: 0

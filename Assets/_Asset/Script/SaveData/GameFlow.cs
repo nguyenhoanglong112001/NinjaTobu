@@ -179,6 +179,23 @@ public class GameFlow : MonoBehaviour
                 data.Save(slot.name, timeuse);
             }
         }
+        if(Social.localUser.authenticated)
+        {
+            if(timeplaying >= 10)
+            {
+                PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_play_time, 100, (result) =>
+                {
+                    if (result)
+                    {
+                        Debug.Log("success");
+                    }
+                    else
+                    {
+                        Debug.Log("failed");
+                    }
+                });
+            }
+        }
         isend = true;
         isplaying = false;
         //DisableComponents();

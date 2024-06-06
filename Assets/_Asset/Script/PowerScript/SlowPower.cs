@@ -24,6 +24,10 @@ public class SlowPower : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            if(slowsound != null)
+            {
+                slowsound.Play();
+            }
             if (effectslow == null)
             {
                 effectslow = Instantiate(SlowEffect, effectpoint.position, Quaternion.identity);

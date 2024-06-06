@@ -1,63 +1,59 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MusicButton : MonoBehaviour
+public class SoundButton : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private GameObject on;
     [SerializeField] private GameObject off;
-    [SerializeField] private bool ismusicon;
+    [SerializeField] private bool issoundon;
     [SerializeField] private SaveData savesetting;
     [SerializeField] private GetIntData data;
     void Start()
     {
-        if(data.GetData("music",0) == 0)
+        if (data.GetData("sound",0) == 0)
         {
-            ismusicon = false;
+            issoundon = false;
         }
         else
         {
-            ismusicon = true;
+            issoundon = true;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(ismusicon)
+        if(issoundon)
         {
             on.SetActive(true);
             off.SetActive(false);
-            ismusicon = true;
-            savesetting.Save("music", 1);
+            savesetting.Save("sound", 1);
         }
         else
         {
             on.SetActive(false);
             off.SetActive(true);
-            ismusicon = false;
-            savesetting.Save("music", 0);
+            savesetting.Save("sound", 0);
         }
     }
-    public void MusicOn()
+    public void SoundOn()
     {
         on.SetActive(true);
         off.SetActive(false);
-        ismusicon = true;
-        savesetting.Save("music", 1);
+        issoundon = true;
+        savesetting.Save("sound", 1);
     }
 
-    public void MusicOff()
+    public void SoundOff()
     {
         on.SetActive(false);
         off.SetActive(true);
-        ismusicon = false;
-        savesetting.Save("music", 0);
+        issoundon = false;
+        savesetting.Save("sound", 0);
     }
 
     public bool CheckMusic()
     {
-        return ismusicon;
+        return issoundon;
     }
 }

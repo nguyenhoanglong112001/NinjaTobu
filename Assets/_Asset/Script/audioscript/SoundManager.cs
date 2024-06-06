@@ -15,6 +15,9 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioSource soundattack;
     [SerializeField] private AudioClip[] jumpsoundclip;
     [SerializeField] private AudioSource jumpsound;
+
+    [SerializeField] private GetIntData getdata;
+    [SerializeField] private AudioSource[] sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +30,26 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(getdata.GetData("music",0) == 0)
+        {
+            background.gameObject.SetActive(false);
+        }
+        else
+        {
+            background.gameObject.SetActive(true);
+        }
+
+        foreach (var s in sound)
+        {
+            if(getdata.GetData("sound",0) == 0)
+            {
+                s.gameObject.SetActive(false);
+            }
+            else
+            {
+                s.gameObject.SetActive(true);
+            }
+        }
     }
 
     public void PlaySoundUI()

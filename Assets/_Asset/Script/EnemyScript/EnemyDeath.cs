@@ -7,11 +7,16 @@ public class EnemyDeath : MonoBehaviour
     [SerializeField] private GameObject effectprefab;
     [SerializeField] private SpriteRenderer[] sprite;
     [SerializeField] private AudioSource deathaudio;
+    [SerializeField] private GetIntData data;
     private GameObject enemy;
     // Start is called before the first frame update
     void Start()
     {
-        deathaudio = GameObject.Find("EnemyDeath").GetComponent<AudioSource>();
+        data = GameObject.FindWithTag("Data").GetComponent<GetIntData>();
+        //if(data.GetData("sound",0) == 1)
+        //{
+        //    deathaudio = GameObject.Find("EnemyDeath").GetComponent<AudioSource>();
+        //}
     }
 
     // Update is called once per frame
@@ -22,7 +27,10 @@ public class EnemyDeath : MonoBehaviour
 
     public void Death()
     {
-        deathaudio.Play();
+        //if(deathaudio != null)
+        //{
+        //    deathaudio.Play();
+        //}
         StartCoroutine(StartEffect());
     }
     IEnumerator StartEffect()

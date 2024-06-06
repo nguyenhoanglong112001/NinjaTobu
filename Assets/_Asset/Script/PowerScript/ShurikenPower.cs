@@ -24,7 +24,10 @@ public class ShurikenPower : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            ShurikenSound.Play();
+            if(ShurikenSound != null)
+            {
+                ShurikenSound.Play();
+            }
             if(shurikeneff == null)
             {
                 shurikeneff = Instantiate(shirieffect, point.position, Quaternion.identity);
