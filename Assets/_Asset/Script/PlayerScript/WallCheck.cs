@@ -15,14 +15,14 @@ public class WallCheck : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("WallRight") || collision.CompareTag("SideLeft"))
+        if (collision.CompareTag("WallRight"))
         {
             rigi2d.velocity = Vector2.zero;
             rigi2d.gravityScale = 0;
             anima.SetBool("IsWalling", true);
             sprite.flipX = true;
         }
-        else if (collision.CompareTag("WallLeft") || collision.CompareTag("SideRight"))
+        else if (collision.CompareTag("WallLeft"))
         {
             rigi2d.velocity = Vector2.zero;
             rigi2d.gravityScale = 0;
@@ -30,18 +30,11 @@ public class WallCheck : MonoBehaviour
             sprite.flipX = false;
 
         }
-        if (collision.CompareTag("DownGround"))
-        {
-            rigi2d.velocity = Vector2.zero;
-            rigi2d.gravityScale = 0;
-            anima.SetBool("IsDown", true);
-            anima.SetBool("IsWalling", false);
-        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("WallLeft") || collision.CompareTag("WallRight") || collision.CompareTag("DownGround") || collision.CompareTag("SideGround") || collision.CompareTag("SideRight") || collision.CompareTag("SideLeft"))
+        if(collision.CompareTag("WallLeft") || collision.CompareTag("WallRight") || collision.CompareTag("Ground"))
         {
             rigi2d.gravityScale = gravity;
             anima.SetBool("IsWalling", false);

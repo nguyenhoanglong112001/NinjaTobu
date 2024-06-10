@@ -58,7 +58,7 @@ public class AttackScript : MonoBehaviour
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             head.rotation = Quaternion.RotateTowards(head.rotation, rotation, speed * Time.deltaTime);
             StartCoroutine(ScaleDown());
-            InvokeRepeating("Shoot", 5.0f, timedelay);
+            InvokeRepeating("Shoot", 3.0f, timedelay);
         }
         else
         {
