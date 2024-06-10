@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 713125730}
   m_Layer: 0
   m_Name: MonkyGold
-  m_TagString: Untagged
+  m_TagString: MonkeyCollector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -340,9 +340,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 6187848145610753514}
   rig2d: {fileID: 1568838698605767545}
-  speed: 250
+  speed: 600
   player: {fileID: 0}
-  distance: 2.5
+  distance: 4
   wallcheck: {fileID: 3136510600673000567}
   mkcollect: {fileID: 3703743638916891524}
 --- !u!114 &713125730
@@ -384,7 +384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8000840396370280826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.29, y: 0.16, z: 0}
+  m_LocalPosition: {x: 4.29, y: 0.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -415,7 +415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8363251917266451951}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.69, y: 0.26, z: 0}
+  m_LocalPosition: {x: -2.69, y: 0.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

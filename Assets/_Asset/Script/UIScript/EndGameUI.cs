@@ -46,7 +46,7 @@ public class EndGameUI : MonoBehaviour
         }
         if(Social.localUser.authenticated)
         {
-            PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_further, (int)Mathf.Round(score.GetScore()), (result) =>
+            PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_secret_achivement, (int)Mathf.Round(score.GetScore()), (result) =>
             {
                 if (result)
                 {

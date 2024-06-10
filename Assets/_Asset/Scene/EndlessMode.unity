@@ -324,6 +324,10 @@ MonoBehaviour:
   isbuy: 0
   Equipsound: {fileID: 396009524}
   Unequipsound: {fileID: 1688268902}
+  powername: {fileID: 1055756409}
+  description: {fileID: 1562004873}
+  name: tranquil forcus
+  powerdes: the doom spike move 20% slower, giving you more time to thing and react
 --- !u!114 &57340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,7 +648,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 67b59d7d52da5f74b813fc1569b02efc, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -1740,6 +1744,10 @@ MonoBehaviour:
   isbuy: 0
   Equipsound: {fileID: 396009524}
   Unequipsound: {fileID: 1688268902}
+  powername: {fileID: 1055756409}
+  description: {fileID: 1562004873}
+  name: greedy monkey
+  powerdes: cuddies, an insatiable coin - seeking monkey, will help you grab coin
 --- !u!114 &145492161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2086,6 +2094,10 @@ MonoBehaviour:
   isbuy: 0
   Equipsound: {fileID: 396009524}
   Unequipsound: {fileID: 1688268902}
+  powername: {fileID: 1055756409}
+  description: {fileID: 1562004873}
+  name: forcused form
+  powerdes: you are reduced to a fraction of your orginal size
 --- !u!114 &174990681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2579,6 +2591,10 @@ MonoBehaviour:
   isbuy: 0
   Equipsound: {fileID: 396009524}
   Unequipsound: {fileID: 1688268902}
+  powername: {fileID: 1055756409}
+  description: {fileID: 1562004873}
+  name: rage monkey
+  powerdes: spike, a ferocious - weilding monkey, will help you kill enemies
 --- !u!114 &203516249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5339,7 +5355,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 67b59d7d52da5f74b813fc1569b02efc, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -5480,37 +5496,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &520161453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 520161455}
-  m_Layer: 0
-  m_Name: IAPManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &520161455
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520161453}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.41, y: 0.19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &521227761
 GameObject:
   m_ObjectHideFlags: 0
@@ -6479,7 +6464,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 67b59d7d52da5f74b813fc1569b02efc, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -7208,7 +7193,7 @@ Transform:
   - {fileID: 729807803}
   - {fileID: 1697030858}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &718948760
 MonoBehaviour:
@@ -8826,7 +8811,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 67b59d7d52da5f74b813fc1569b02efc, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -9172,7 +9157,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 67b59d7d52da5f74b813fc1569b02efc, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -9348,6 +9333,7 @@ MonoBehaviour:
   slotpower: {fileID: 694887378}
   index: 0
   imageslot: {fileID: 870645944}
+  slot: 
 --- !u!114 &1005387126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9806,6 +9792,7 @@ MonoBehaviour:
   - {fileID: 2130637593, guid: ffe48a091359970449c1badabb85a04e, type: 3}
   - {fileID: 143171839, guid: 610b6cf594bc3a54791db0084923ba4a, type: 3}
   - {fileID: -509115487, guid: ba7db0efc9c348040b92c950f47aabb8, type: 3}
+  - {fileID: 748092420, guid: 2d3a73d89fd51a2468dabe6843db7c1c, type: 3}
   - {fileID: -98605476, guid: 7116d84df7c31b24b832be3c43267f5f, type: 3}
   - {fileID: 1742477883, guid: 92ff9db0c2135734b81ec3b32af668eb, type: 3}
   - {fileID: 1453726775, guid: eca756e00763fe3468f4ac784fda84e7, type: 3}
@@ -9829,6 +9816,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: f718a9986abbfcc40a7451df82a8c25a, type: 2}
   - {fileID: 9100000, guid: f17d7f42245e8cb4d86a09925770afcd, type: 2}
   - {fileID: 9100000, guid: cedcd30ca82803e43b900e004313e45c, type: 2}
+  - {fileID: 9100000, guid: 3b5e60dd9f56639498071ac49d00f04e, type: 2}
   - {fileID: 9100000, guid: 29196868beff65d4d9785e332409ad23, type: 2}
   - {fileID: 9100000, guid: 7edfde23f59934d4aa45548f452225a6, type: 2}
   - {fileID: 9100000, guid: f4f2f83f275ced54da43cb23d84ec6e0, type: 2}
@@ -9853,6 +9841,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cb0972e623caaf8448acdc027951075d, type: 3}
   - {fileID: 8300000, guid: 088e455a928cb0440935204f1054dce3, type: 3}
   - {fileID: 8300000, guid: cb0972e623caaf8448acdc027951075d, type: 3}
+  - {fileID: 8300000, guid: 7485c36130cabe24db87c659a35d5697, type: 3}
   - {fileID: 8300000, guid: c9c8f642d09ff34488a05241682e5844, type: 3}
   - {fileID: 8300000, guid: cb0972e623caaf8448acdc027951075d, type: 3}
   - {fileID: 8300000, guid: 2ca479893977ffa42beff01dfcfdb293, type: 3}
@@ -9877,6 +9866,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: db75a94f92e8c0c48a3e0365435b2069, type: 3}
   - {fileID: 8300000, guid: 355ed202f1405804d839dce8e4fe985b, type: 3}
   - {fileID: 8300000, guid: db75a94f92e8c0c48a3e0365435b2069, type: 3}
+  - {fileID: 8300000, guid: a0b9d45c531267c4f9e9b995ef0d2a86, type: 3}
   - {fileID: 8300000, guid: 48c37ea23f5f2a84c94c1510d4d2893a, type: 3}
   - {fileID: 8300000, guid: db75a94f92e8c0c48a3e0365435b2069, type: 3}
   - {fileID: 8300000, guid: 2ca479893977ffa42beff01dfcfdb293, type: 3}
@@ -9901,6 +9891,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bfe8354c02f6b14d9c98757c44faff9, type: 3}
   - {fileID: 8300000, guid: 8bfe8354c02f6b14d9c98757c44faff9, type: 3}
   - {fileID: 8300000, guid: 8bfe8354c02f6b14d9c98757c44faff9, type: 3}
+  - {fileID: 8300000, guid: 60cf4dfd213a12745a79720cb41ebaba, type: 3}
   - {fileID: 8300000, guid: 8bfe8354c02f6b14d9c98757c44faff9, type: 3}
   - {fileID: 8300000, guid: 8bfe8354c02f6b14d9c98757c44faff9, type: 3}
   - {fileID: 8300000, guid: 083e0fce886dbed4ba04d75b1533f005, type: 3}
@@ -9927,7 +9918,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1068622677
 GameObject:
@@ -11003,6 +10994,7 @@ MonoBehaviour:
   slotpower: {fileID: 694887378}
   index: 2
   imageslot: {fileID: 1761983322}
+  slot: Slot3
 --- !u!114 &1261357646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11395,7 +11387,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 67b59d7d52da5f74b813fc1569b02efc, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -13274,7 +13266,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: fc73af915da22734bb15d1602c3155b6, type: 3}
     m_FontSize: 39
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 68
@@ -14645,6 +14637,7 @@ MonoBehaviour:
   slotpower: {fileID: 694887378}
   index: 1
   imageslot: {fileID: 1298638601}
+  slot: Slot2
 --- !u!114 &1685629174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16330,6 +16323,10 @@ MonoBehaviour:
   isbuy: 0
   Equipsound: {fileID: 396009524}
   Unequipsound: {fileID: 1688268902}
+  powername: {fileID: 1055756409}
+  description: {fileID: 1562004873}
+  name: gilded fortune
+  powerdes: every coin collected is worth two coins
 --- !u!114 &1816496492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18107,6 +18104,10 @@ MonoBehaviour:
   isbuy: 0
   Equipsound: {fileID: 396009524}
   Unequipsound: {fileID: 1688268902}
+  powername: {fileID: 1055756409}
+  description: {fileID: 1562004873}
+  name: iron skin
+  powerdes: bullets fired by matchlock enemies will not harm you
 --- !u!114 &1955213659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19495,7 +19496,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2125153805
 GameObject:

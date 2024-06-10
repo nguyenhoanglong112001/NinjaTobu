@@ -42,4 +42,10 @@ public class GroundCheck : MonoBehaviour
     {
         IsGround = Physics2D.CircleCast(groundcheck.position, radius, transform.position, 0.0f, layer);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(groundcheck.position, radius);
+    }
 }

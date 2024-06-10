@@ -24,9 +24,10 @@
 
 public static class GPGSIds
 {
-        public const string achievement_further = "CgkIwN33vqgXEAIQAg"; // <GPGSID>
-        public const string leaderboard_ninjatobuscore = "CgkIwN33vqgXEAIQAA"; // <GPGSID>
         public const string achievement_play_time = "CgkIwN33vqgXEAIQAw"; // <GPGSID>
+        public const string leaderboard_ninjatobuscore = "CgkIwN33vqgXEAIQAA"; // <GPGSID>
+        public const string achievement_secret_achivement = "CgkIwN33vqgXEAIQAg"; // <GPGSID>
+        public const string achievement_first_purchase = "CgkIwN33vqgXEAIQBQ"; // <GPGSID>
         public const string achievement_killer = "CgkIwN33vqgXEAIQBA"; // <GPGSID>
 
 }

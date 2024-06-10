@@ -179,23 +179,6 @@ public class GameFlow : MonoBehaviour
                 data.Save(slot.name, timeuse);
             }
         }
-        if(Social.localUser.authenticated)
-        {
-            if(timeplaying >= 10)
-            {
-                PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_play_time, 100, (result) =>
-                {
-                    if (result)
-                    {
-                        Debug.Log("success");
-                    }
-                    else
-                    {
-                        Debug.Log("failed");
-                    }
-                });
-            }
-        }
         isend = true;
         isplaying = false;
         //DisableComponents();
@@ -250,6 +233,23 @@ public class GameFlow : MonoBehaviour
             {
                 timeplaying += 1;
                 timer = 0;
+            }
+            if(timeplaying >= 30)
+            {
+                if(Social.localUser.authenticated)
+                {
+                    PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_play_time, 100, (result) =>
+                    {
+                        if (result)
+                        {
+                            Debug.Log("success");
+                        }
+                        else
+                        {
+                            Debug.Log("failed");
+                        }
+                    });
+                }
             }
         }
     }

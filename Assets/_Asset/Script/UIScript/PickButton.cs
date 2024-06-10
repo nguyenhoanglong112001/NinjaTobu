@@ -20,6 +20,11 @@ public class PickButton : MonoBehaviour
     [SerializeField] private bool isbuy;
     [SerializeField] private AudioSource Equipsound;
     [SerializeField] private AudioSource Unequipsound;
+
+    [SerializeField] private Text powername;
+    [SerializeField] private Text description;
+    [SerializeField] private string name;
+    [SerializeField] private string powerdes;
     void Start()
     {
     }
@@ -60,6 +65,8 @@ public class PickButton : MonoBehaviour
                     AddPower();
                     isuse = true;
                 }
+                powername.text = name;
+                description.text = powerdes;
             }    
         }
         else if (Arreffect.gameObject.activeSelf && isuse)

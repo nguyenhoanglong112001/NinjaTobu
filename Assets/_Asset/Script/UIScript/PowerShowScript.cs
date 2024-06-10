@@ -11,10 +11,11 @@ public class PowerShowScript : MonoBehaviour
     [SerializeField] private CheckSlotPower slotpower;
     [SerializeField] private int index;
     [SerializeField] private Image imageslot;
+    [SerializeField] private string slot;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //CheckStartUnlock();
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class PowerShowScript : MonoBehaviour
 
     private void CheckUnlock()
     {
-        if (checkunlock.GetUnlock())
+        if (checkunlock.GetUnlock() || PlayerPrefs.HasKey(slot))
         {
             unlockUI.SetActive(true);
             lockUI.SetActive(false);
@@ -44,7 +45,6 @@ public class PowerShowScript : MonoBehaviour
     {
         if(slotpower.GetSlotArr()[index].GetComponent<SlotUI>().GetImage().sprite != null)
         {
-            Debug.Log(slotpower.GetSlotArr()[index].GetComponent<SlotUI>().GetImage());
             imageslot.gameObject.SetActive(true);
             imageslot.sprite = slotpower.GetSlotArr()[index].GetComponent<SlotUI>().GetImage().sprite;
         }
@@ -52,6 +52,15 @@ public class PowerShowScript : MonoBehaviour
         {
             imageslot.gameObject.SetActive(false);
             imageslot.sprite = null;
+        }
+    }
+
+    private void CheckStartUnlock()
+    {
+        if(PlayerPrefs.HasKey(slot))
+        {
+            unlockUI.SetActive(true);
+            lockUI.SetActive(false);
         }
     }
 }

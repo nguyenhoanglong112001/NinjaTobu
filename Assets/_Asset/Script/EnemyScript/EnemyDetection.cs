@@ -35,7 +35,6 @@ public class EnemyDetection :MonoBehaviour
 
     private void Detection()
     {
-        Debug.Log(attackcount);
         var hit = Physics2D.CircleCast(attackpoint.position, radius, transform.position, 0.0f, targetlayer);
         if(hit.collider != null)
         {

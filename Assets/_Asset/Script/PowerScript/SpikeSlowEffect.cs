@@ -14,7 +14,7 @@ public class SpikeSlowEffect :MonoBehaviour
         if(powercheck.SpikeSlowCheck())
         {
             //powerui.ShowPower(powerimagine);
-            Spike.GetComponent<TrapMove>().SetSpeed(-0.3f);
+            Spike.GetComponent<TrapMove>().SetSpeed(-0.4f);
         }
     }
 
@@ -23,7 +23,7 @@ public class SpikeSlowEffect :MonoBehaviour
         //powerui.UnShowPower(powerimagine);
         if(Spike != null)
         {
-            Spike.GetComponent<TrapMove>().SetSpeed(0.3f);
+            Spike.GetComponent<TrapMove>().SetSpeed(0.4f);
             powercheck.SpikeSlowPower(false);
         }
     }

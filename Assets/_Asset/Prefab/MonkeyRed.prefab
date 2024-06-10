@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 4903831285875597572}
   m_Layer: 0
   m_Name: MonkeyRed
-  m_TagString: Untagged
+  m_TagString: MonkeyAttacker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -265,9 +265,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3717235249332655294}
   rig2d: {fileID: 7503318877337350722}
-  speed: 250
+  speed: 600
   player: {fileID: 3131652770961520445, guid: 51f98c19a2710b84098044d7fe37dea0, type: 3}
-  distance: 2.5
+  distance: 4
   wallcheck: {fileID: 6549813675779154261}
   mkatk: {fileID: 1279947826}
 --- !u!114 &4903831285875597572
@@ -415,7 +415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8731265679240601668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.8, y: 0.22, z: 0}
+  m_LocalPosition: {x: 2.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
