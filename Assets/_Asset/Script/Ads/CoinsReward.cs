@@ -27,8 +27,6 @@ public class CoinsReward : MonoBehaviour
     {
         if(isadavaliable)
         {
-            AddManager.Instance.rewarded.SetAdunit("Get100Coins");
-            AddManager.Instance.rewarded.LoadAd();
             AddManager.Instance.rewarded.ShowAd();
         }
     }

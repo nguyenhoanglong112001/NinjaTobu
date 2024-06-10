@@ -1,51 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TrapMove : MonoBehaviour
 {
-    [SerializeField] private float movespeed;
-    [SerializeField] private float ditectradius;
-    [SerializeField] private Rigidbody2D playerrigi;
-    [SerializeField] private GameObject follow;
-    private float playerY;
-    // Start is called before the first frame update
+    [SerializeField] private float moveSpeed = 2f;
+    [SerializeField] private float speedMultiplier = 3f;
+    [SerializeField] private Rigidbody2D player;
     void Start()
     {
-        
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.up * movespeed * Time.deltaTime);
+        MoveTrap();
     }
 
-    //public void CheckPlayerJump()
-    //{
-    //    if(playerrigi != null)
-    //    {
-    //        playerY = playerrigi.velocity.y;
-    //    }
-
-    //    float stopspeed = 0;
-    //    if(playerY > ditectradius)
-    //    {
-    //        Debug.Log("Stop");
-    //        gameObject.transform.SetParent(follow.transform);
-    //        transform.Translate(Vector2.up * stopspeed * Time.deltaTime);
-    //    }
-    //    else if (playerY < ditectradius)
-    //    {
-    //        Debug.Log("Go");
-    //        gameObject.transform.SetParent(null);
-    //        transform.Translate(Vector2.up * movespeed * Time.deltaTime);
-    //    }
-    //}
-
-
-    public void SetSpeed(float numspeed)
+    void MoveTrap()
     {
-        movespeed += numspeed;
+        if(player != null)
+        {
+            if (player.velocity.y > 0.1f)
+            {
+                transform.Translate(Vector2.up * moveSpeed * speedMultiplier * Time.deltaTime);
+            }
+            else if (player.velocity.y < -0.1f)
+            {
+                transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+            }
+        }
+    }
+
+
+    public void SetSpeed(float speed)
+    {
+        moveSpeed += speed;
     }
 }

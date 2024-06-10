@@ -25,7 +25,7 @@ public class Coin : MonoBehaviour
         {
             coinsound = GameObject.Find("CollectCoinSound").GetComponent<AudioSource>();
         }
-        if (!check.DoubleCoinCheck())
+        if (!check.DoubleCoinCheck() && coin != null)
         {
             coin.SetCoinPoint(1);
         }
