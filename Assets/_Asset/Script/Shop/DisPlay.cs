@@ -13,11 +13,24 @@ public class DisPlay : MonoBehaviour
     [SerializeField] private GameObject[] raretydisplay;
     [SerializeField] private GameObject[] button;
     [SerializeField] private GameObject costdisplay;
+    [SerializeField] private GameObject[] listdisplayeffect;
     private int cost;
+
+
+    [SerializeField] private Sprite imortal;
+    [SerializeField] private Sprite lucky;
+    [SerializeField] private Sprite heavy;
+    [SerializeField] private Sprite lighter;
+    [SerializeField] private Sprite strong;
+    [SerializeField] private Sprite slowmo;
+    [SerializeField] private Sprite slow;
+    [SerializeField] private Sprite fast;
+    [SerializeField] private Sprite shuriken;
+    private GameObject currentchoice;
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentchoice = manager.GetChoice();
     }
 
     // Update is called once per frame
@@ -95,4 +108,86 @@ public class DisPlay : MonoBehaviour
             costdisplay.SetActive(true);
         }
     }   
+
+    public void DisplayEffect()
+    {
+        if (manager.GetChoice() != currentchoice)
+        {
+            foreach (var a in listdisplayeffect)
+            {
+                a.GetComponent<Image>().sprite = null;
+                a.SetActive(false);
+            }
+        }
+        currentchoice = manager.GetChoice();
+        var choice = manager.GetChoice();
+        var checkeffect = choice.GetComponent<ChoiceCharacter>().GetListEffect();
+        int i = 0;
+        foreach (var effect in checkeffect)
+        {
+            if (effect == "imortal")
+            {
+                listdisplayeffect[i].GetComponent<Image>().sprite = imortal;
+                listdisplayeffect[i].transform.GetChild(0).GetComponent<Text>().text = "Imortal";
+                listdisplayeffect[i].SetActive(true);
+                i++;
+            }
+            if (effect == "luckycoin")
+            {
+                listdisplayeffect[i].GetComponent<Image>().sprite = lucky;
+                listdisplayeffect[i].transform.GetChild(0).GetComponent<Text>().text = "Lucky coin";
+                listdisplayeffect[i].SetActive(true);
+                i++;
+            }
+            if (effect == "lighter")
+            {
+                listdisplayeffect[i].GetComponent<Image>().sprite = lighter;
+                listdisplayeffect[i].transform.GetChild(0).GetComponent<Text>().text = "Light";
+                listdisplayeffect[i].SetActive(true);
+                i++;
+            }
+            if (effect == "fast")
+            {
+                listdisplayeffect[i].GetComponent<Image>().sprite = fast;
+                listdisplayeffect[i].transform.GetChild(0).GetComponent<Text>().text = "Fast";
+                listdisplayeffect[i].SetActive(true);
+                i++;
+            }
+            if (effect == "shuriken")
+            {
+                listdisplayeffect[i].GetComponent<Image>().sprite = shuriken;
+                listdisplayeffect[i].transform.GetChild(0).GetComponent<Text>().text = "Shuriken";
+                listdisplayeffect[i].SetActive(true);
+                i++;
+            }
+            if (effect == "slowmo")
+            {
+                listdisplayeffect[i].GetComponent<Image>().sprite = slowmo;
+                listdisplayeffect[i].transform.GetChild(0).GetComponent<Text>().text = "Slow-mo";
+                listdisplayeffect[i].SetActive(true);
+                i++;
+            }
+            if (effect == "strong")
+            {
+                listdisplayeffect[i].GetComponent<Image>().sprite = strong;
+                listdisplayeffect[i].transform.GetChild(0).GetComponent<Text>().text = "Strong";
+                listdisplayeffect[i].SetActive(true);
+                i++;
+            }
+            if (effect == "heavy")
+            {
+                listdisplayeffect[i].GetComponent<Image>().sprite = heavy;
+                listdisplayeffect[i].transform.GetChild(0).GetComponent<Text>().text = "Heavy";
+                listdisplayeffect[i].SetActive(true);
+                i++;
+            }
+            if (effect == "slow")
+            {
+                listdisplayeffect[i].GetComponent<Image>().sprite = slow;
+                listdisplayeffect[i].transform.GetChild(0).GetComponent<Text>().text = "Slow";
+                listdisplayeffect[i].SetActive(true);
+                i++;
+            }
+        }
+    }
 }

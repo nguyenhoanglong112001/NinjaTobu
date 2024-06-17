@@ -9,6 +9,7 @@ public class SpriteAnimator : MonoBehaviour
     [SerializeField] private AudioClip[] jumpsound;
     [SerializeField] private AudioClip[] deathsound;
     [SerializeField] private AudioClip[] attacksound;
+    [SerializeField] private GameObject[] effectlist;
      // Start is called before the first frame update
     void Start()
     {
@@ -44,5 +45,10 @@ public class SpriteAnimator : MonoBehaviour
     public AudioClip[] GetattackClips()
     {
         return attacksound;
+    }
+
+    public GameObject[] GetListEffect()
+    {
+        return effectlist;
     }
 }

@@ -8,14 +8,12 @@ public class Coin : MonoBehaviour
     [SerializeField] private CoinUpdate coin;
     [SerializeField] private GameObject effectcoin;
     [SerializeField] private SpriteRenderer coindis;
-    [SerializeField] private PowerCheck check;
     [SerializeField] private AudioSource coinsound;
     [SerializeField] private GetIntData getdata;
     private GameObject effect;
     // Start is called before the first frame update
     void Start()
     {
-        check = GameObject.FindWithTag("Player").GetComponent<PowerCheck>();
         if(IsObjectActive("coinnum"))
         {
             coin = GameObject.Find("coinnum").GetComponent<CoinUpdate>();
@@ -24,10 +22,6 @@ public class Coin : MonoBehaviour
         if (getdata.GetData("sound",0) == 1)
         {
             coinsound = GameObject.Find("CollectCoinSound").GetComponent<AudioSource>();
-        }
-        if (!check.DoubleCoinCheck() && coin != null)
-        {
-            coin.SetCoinPoint(1);
         }
     }
 

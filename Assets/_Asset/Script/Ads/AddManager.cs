@@ -18,14 +18,5 @@ public class AddManager : MonoBehaviour
             return;
         }
         Instance = this;
-
-        StartCoroutine(DisplayBannerAdWithDisplay());
-    }
-
-    IEnumerator DisplayBannerAdWithDisplay()
-    {
-        yield return new WaitForSeconds(1.0f);
-
-        AddManager.Instance.bannerad.ShowBannerAd();
     }
 }

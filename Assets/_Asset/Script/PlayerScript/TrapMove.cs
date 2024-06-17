@@ -3,8 +3,10 @@
 public class TrapMove : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 2f;
-    [SerializeField] private float speedMultiplier = 3f;
-    [SerializeField] private Rigidbody2D player;
+    [SerializeField] private float gospeed = 3f;
+    [SerializeField] private Transform player;
+    [SerializeField] private Transform ground;
+    [SerializeField] private float distancethrehod;
     void Start()
     {
     }
@@ -18,15 +20,12 @@ public class TrapMove : MonoBehaviour
     {
         if(player != null)
         {
-            if (player.velocity.y > 0.1f)
+            var distance = Vector2.Distance(player.position, ground.position);
+            if (distance > distancethrehod)
             {
-                transform.Translate(Vector2.up * moveSpeed * speedMultiplier * Time.deltaTime);
+                transform.Translate(Vector2.up * gospeed * Time.deltaTime);
             }
-            else if (player.velocity.y < -0.1f)
-            {
-                transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
-            }
-            else
+            else if (distance < distancethrehod)
             {
                 transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
             }

@@ -12,6 +12,7 @@ public class SetGameStart : MonoBehaviour
     [SerializeField] private Jump jumpspeed;
     [SerializeField] private PlayerDetection knockback;
     [SerializeField] private SlowCheck slowtime;
+    [SerializeField] private Transform playerposition;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,5 +37,8 @@ public class SetGameStart : MonoBehaviour
         sound.SetJumpSoundClip(listcharacter.GetJumpClips()[index]);
         sound.SetDeathSound(listcharacter.GetDeathClips()[index]);
         sound.SetSoundAttack(listcharacter.GetattackClips()[index]);
+        var effect = getdata.GetData("Effect", 0);
+        var Effectpre = Instantiate(listcharacter.GetListEffect()[effect], playerposition.position, Quaternion.identity);
+        Effectpre.transform.SetParent(playerposition);
     }
 }

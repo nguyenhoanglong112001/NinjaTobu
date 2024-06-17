@@ -20,6 +20,10 @@ public class TrapControl : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            if(gameObject.tag == "SpikeGround")
+            {
+                collision.GetComponent<PlayerControll>().Die();
+            }
             collision.GetComponent<PlayerControll>().Death();
         }
     }

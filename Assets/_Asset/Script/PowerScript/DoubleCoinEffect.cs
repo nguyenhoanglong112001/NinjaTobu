@@ -28,7 +28,7 @@ public class DoubleCoinEffect : MonoBehaviour
         if (powercheck.DoubleCoinCheck())
         {
             //powerui.ShowPower(powerimage);
-            updatecoin.SetCoinPoint(2);
+            updatecoin.SetCoinPoint(updatecoin.GetCoinPoint()*2);
         }
     }
 
@@ -39,7 +39,7 @@ public class DoubleCoinEffect : MonoBehaviour
     private void OnDestroy()
     {
         //powerui.UnShowPower(powerimage);
-        updatecoin.SetCoinPoint(1);
+        updatecoin.SetCoinPoint(updatecoin.GetCoinPoint()/2);
         powercheck.DoubleCoinPower(false);
     }
 }

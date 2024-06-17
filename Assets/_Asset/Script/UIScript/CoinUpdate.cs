@@ -8,10 +8,20 @@ public class CoinUpdate : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private Text coincount;
     [SerializeField] private int coinpoint;
+    [SerializeField] private PowerCheck check;
     private int totalcoin;
     void Start()
     {
+        check = GameObject.FindWithTag("Player").GetComponent<PowerCheck>();
         totalcoin = 0;
+        if(PlayerPrefs.HasKey("LuckyCoin"))
+        {
+            coinpoint = 2;
+        }
+        else
+        {
+            coinpoint = 1;
+        }    
     }
 
     public void UpdateCoin(int point)

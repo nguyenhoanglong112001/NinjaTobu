@@ -19,16 +19,62 @@ public class ChoiceCharacter : MonoBehaviour
     [SerializeField] private AudioSource EquipSound;
     [SerializeField] private AudioClip soundVO;
     [SerializeField] private AudioClip soundequip;
+    [SerializeField] private SaveData save;
 
     [SerializeField] private float speed;
     [SerializeField] private float timeslow;
     [SerializeField] private float gravity;
     [SerializeField] private float knockback;
     [SerializeField] private Sprite Shuriken;
+    [SerializeField] private bool luckycoin;
+    [SerializeField] private bool imortal;
+    [SerializeField] private bool slowmo;
+    [SerializeField] private bool slow;
+    [SerializeField] private bool strong;
+    [SerializeField] private bool heavy;
+    [SerializeField] private bool lighter;
+    [SerializeField] private bool fast;
+    [SerializeField] private bool shuriken;
+    [SerializeField] private List<string> effect;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (luckycoin)
+        {
+            effect.Add(nameof(luckycoin));
+        }
+        if(slow)
+        {
+            effect.Add(nameof(slow));
+        }
+        if(slowmo)
+        {
+            effect.Add(nameof(slowmo));
+        }
+        if(strong)
+        {
+            effect.Add(nameof(strong));
+        }
+        if(imortal)
+        {
+            effect.Add(nameof(imortal));
+        }
+        if(lighter)
+        {
+            effect.Add(nameof(lighter));
+        }
+        if(heavy)
+        {
+            effect.Add(nameof(heavy));
+        } 
+        if(fast)
+        {
+            effect.Add(nameof(fast));
+        }
+        if(shuriken)
+        {
+            effect.Add(nameof(shuriken));
+        }
     }
 
     // Update is called once per frame
@@ -139,5 +185,20 @@ public class ChoiceCharacter : MonoBehaviour
     public RuntimeAnimatorController GetAnimator()
     {
         return animator;
+    }
+
+    public bool CheckLucky()
+    {
+        return luckycoin;
+    }
+
+    public bool CheckImortal()
+    {
+        return imortal;
+    }
+
+    public List<string> GetListEffect()
+    {
+        return effect;
     }
 }

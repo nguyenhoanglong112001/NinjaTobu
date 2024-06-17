@@ -22,6 +22,7 @@ public class SetCoin : MonoBehaviour
     {
         raretytext.text = rarety.ToString();
         SetPrice();
+        Debug.Log(GetCost());
     }
 
 
@@ -29,11 +30,6 @@ public class SetCoin : MonoBehaviour
     void Update()
     {
         
-    }
-    
-    public int GetPrice()
-    {
-        return cost;
     }
 
     private void SetPrice()

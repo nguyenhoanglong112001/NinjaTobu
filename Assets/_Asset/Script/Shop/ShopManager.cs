@@ -35,6 +35,22 @@ public class ShopManager : MonoBehaviour
         saveconfig.SaveFloat("slowtime", characterconfig.GetSlow());
         saveconfig.SaveFloat("GravityScale", characterconfig.GetGravity());
         saveconfig.SaveFloat("KnockForce", characterconfig.GetKnockForce());
+        if(characterconfig.CheckLucky())
+        {
+            saveconfig.Save("LuckyCoin", 1);
+        }
+        else
+        {
+            PlayerPrefs.DeleteKey("LuckyCoin");
+        }
+        if(characterconfig.CheckImortal())
+        {
+            saveconfig.Save("Imortal", 1);
+        }
+        else
+        {
+            PlayerPrefs.DeleteKey("Imortal");
+        }
     }
 
     public void SetSoundClip(AudioClip soundclip)

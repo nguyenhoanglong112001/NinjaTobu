@@ -30,7 +30,8 @@ public class EquipButton : MonoBehaviour
         animator.runtimeAnimatorController = manager.GetAnimator();
         shurike.SetShurikenSprite(manager.GetShurikenSprite());
         saveequip.SaveString("equiped", objchocie.name);
-        saveequip.Save("equied", Array.IndexOf(listcharacter, objchocie));  
+        saveequip.Save("equied", Array.IndexOf(listcharacter, objchocie));
+        
         foreach (var obj in listcharacter)
         {
             if (obj == manager.GetChoice())
