@@ -8,6 +8,9 @@ public class MonkeyAttack : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private Animator animator;
     [SerializeField] private Transform Monkey;
+    [SerializeField] private Rigidbody2D mkrigi;
+    [SerializeField] private GameObject point;
+    private int kills;
     private bool isenemyleft;
     private bool isenemyright;
     private bool isatk;
@@ -21,6 +24,7 @@ public class MonkeyAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        point = GameObject.Find("Scorenum");
         JumptoPoint();
     }
 
@@ -29,6 +33,8 @@ public class MonkeyAttack : MonoBehaviour
         if(collision.CompareTag("Enemy"))
         {
             SetAttack(true);
+            mkrigi.velocity = Vector2.zero;
+            Debug.Log(mkrigi.velocity);
             if (Vector2.Distance(Monkey.position,Sideposition[0].position)<0.1f)
             {
                 animator.SetTrigger("Jump");
@@ -40,6 +46,12 @@ public class MonkeyAttack : MonoBehaviour
                 animator.SetTrigger("Jump");
                 isenemyleft = false;
                 isenemyright = true;
+            }
+            collision.GetComponent<EnemyDeath>().Death();
+            kills += 1;
+            if (point != null)
+            {
+                point.GetComponent<GamePoint>().AddScore(10);
             }
         }
     }
@@ -66,6 +78,10 @@ public class MonkeyAttack : MonoBehaviour
         return isatk;
     }
 
+    public int MKkill()
+    {
+        return kills;
+    }
     //IEnumerator JumptoPoint(Transform target)
     //{
     //    Monkey.position = Vector2.Lerp(Monkey.position, target.position, speed * Time.deltaTime);

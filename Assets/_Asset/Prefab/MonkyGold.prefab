@@ -77,6 +77,7 @@ MonoBehaviour:
   speed: 5
   animator: {fileID: 6187848145610753514}
   Monkey: {fileID: 7906962394412239085}
+  mkgoldrigi: {fileID: 1568838698605767545}
 --- !u!1 &4101853399625469272
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,6 +146,7 @@ MonoBehaviour:
   IsOnWall: 0
   animator: {fileID: 6187848145610753514}
   sprite: {fileID: 532971410098460254}
+  point: {fileID: 0}
 --- !u!70 &232634384103889348
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -342,9 +344,10 @@ MonoBehaviour:
   rig2d: {fileID: 1568838698605767545}
   speed: 600
   player: {fileID: 0}
-  distance: 4
+  distance: 8
   wallcheck: {fileID: 3136510600673000567}
   mkcollect: {fileID: 3703743638916891524}
+  ground: {fileID: 0}
 --- !u!114 &713125730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,7 +387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8000840396370280826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.29, y: 0.09, z: 0}
+  m_LocalPosition: {x: 4.34, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -415,7 +418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8363251917266451951}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.69, y: 0.09, z: 0}
+  m_LocalPosition: {x: -2.55, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -18,16 +18,22 @@ public class EndGameUI : MonoBehaviour
     [SerializeField] private Text scoretext;
     [SerializeField] private SaveData highscore;
     [SerializeField] private GetIntData currenthighscore;
+    [SerializeField] private GameObject MonkeyRed;
     void Start()
     {
         killcount[0] = GameObject.FindWithTag("Player").transform.GetChild(1).GetComponent<AttackDitection>();
         killcount[1] = GameObject.FindWithTag("Player").transform.GetChild(2).GetComponent<AttackDitection>();
+        MonkeyRed = GameObject.FindWithTag("MonkeyAttacker");
         totalcoin = coinup.GetTotalCoin();
         foreach(var kill in killcount)
         {
             totalkills += kill.totalkill;
         }
         totalkills += shurikenkill.kills;
+        if(MonkeyRed != null)
+        {
+            totalkills += MonkeyRed.transform.GetChild(1).GetComponent<MonkeyAttack>().MKkill();
+        }
     }
 
     // Update is called once per frame

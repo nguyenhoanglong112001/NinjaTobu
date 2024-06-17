@@ -12,9 +12,11 @@ public class MonkeyATkClimb : MonoBehaviour
     [SerializeField] private float distance;
     [SerializeField] private MonkeyWallCheck wallcheck;
     [SerializeField] private MonkeyAttack mkatk;
+    [SerializeField] private Transform ground;
     void Awake()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        ground = GameObject.FindWithTag("SpikeGround").GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class MonkeyATkClimb : MonoBehaviour
     {
         if (player != null)
         {
-            var currentdistance = Vector2.Distance(transform.position, player.position);
+            var currentdistance = Vector2.Distance(transform.position, ground.position);
             if (wallcheck.GetCheck())
             {
                 if (distance - currentdistance > 0.1f && !mkatk.GetAttack() || player.transform.position.y > transform.position.y)

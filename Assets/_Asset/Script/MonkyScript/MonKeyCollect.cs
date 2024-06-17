@@ -8,6 +8,7 @@ public class MonKeyCollect : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private Animator animator;
     [SerializeField] private Transform Monkey;
+    [SerializeField] private Rigidbody2D mkgoldrigi;
     private bool iscoinleft;
     private bool iscoinright;
     private bool iscollect;
@@ -29,6 +30,7 @@ public class MonKeyCollect : MonoBehaviour
         if (collision.CompareTag("Coin"))
         {
             SetCollect(true);
+            mkgoldrigi.velocity = Vector2.zero;
             if (Vector2.Distance(Monkey.position, Sideposition[0].position) < 0.1f)
             {
                 animator.SetTrigger("Jump");

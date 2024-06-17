@@ -10,9 +10,11 @@ public class MonKeyCollectClimb : MonoBehaviour
     [SerializeField] private float distance;
     [SerializeField] private MonkeyWallCheck wallcheck;
     [SerializeField] private MonKeyCollect mkcollect;
+    [SerializeField] private Transform ground;
     void Awake()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        ground = GameObject.FindWithTag("SpikeGround").GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -25,7 +27,7 @@ public class MonKeyCollectClimb : MonoBehaviour
     {
         if (player != null)
         {
-            var currentdistance = Vector2.Distance(transform.position, player.position);
+            var currentdistance = Vector2.Distance(transform.position, ground.position);
             if (wallcheck.GetCheck())
             {
                 if ((distance - currentdistance > 0.1f && !mkcollect.GetCollect()) || player.transform.position.y > transform.position.y)
