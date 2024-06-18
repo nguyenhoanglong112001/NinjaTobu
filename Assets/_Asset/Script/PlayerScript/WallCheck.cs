@@ -7,38 +7,51 @@ public class WallCheck : MonoBehaviour
     [SerializeField] private Rigidbody2D rigi2d;
     [SerializeField] private Animator anima;
     [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private GameFlow gamemanager;
     private float gravity;
 
     private void Start()
     {
         gravity = rigi2d.gravityScale;
+        Debug.Log(gravity);
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("WallRight"))
+        if(gamemanager != null)
         {
-            rigi2d.velocity = Vector2.zero;
-            rigi2d.gravityScale = 0;
-            anima.SetBool("IsWalling", true);
-            sprite.flipX = true;
-        }
-        else if (collision.CompareTag("WallLeft"))
-        {
-            rigi2d.velocity = Vector2.zero;
-            rigi2d.gravityScale = 0;
-            anima.SetBool("IsWalling", true);
-            sprite.flipX = false;
-
+            if (gamemanager.CheckPlaying())
+            {
+                if (collision.CompareTag("WallRight"))
+                {
+                    rigi2d.velocity = Vector2.zero;
+                    rigi2d.gravityScale = 0;
+                    anima.SetBool("IsWalling", true);
+                    sprite.flipX = true;
+                }
+                else if (collision.CompareTag("WallLeft"))
+                {
+                    rigi2d.velocity = Vector2.zero;
+                    rigi2d.gravityScale = 0;
+                    anima.SetBool("IsWalling", true);
+                    sprite.flipX = false;
+                }
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("WallLeft") || collision.CompareTag("WallRight") || collision.CompareTag("Ground"))
+        if(gamemanager != null)
         {
-            rigi2d.gravityScale = gravity;
-            anima.SetBool("IsWalling", false);
-            anima.SetBool("IsDown", false);
+            if (gamemanager.CheckPlaying())
+            {
+                if (collision.CompareTag("WallLeft") || collision.CompareTag("WallRight") || collision.CompareTag("Ground"))
+                {
+                    rigi2d.gravityScale = gravity;
+                    anima.SetBool("IsWalling", false);
+                    anima.SetBool("IsDown", false);
+                }
+            }
         }
     }
 }

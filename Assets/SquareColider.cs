@@ -31,7 +31,6 @@ public class SquareColider : MonoBehaviour
             {
                 if(deltaX > 0)
                 {
-                    Debug.Log("a");
                     playerrigi.velocity = Vector2.zero;
                     playerrigi.gravityScale = 0;
                     playeranimator.SetBool("IsWalling", true);
@@ -40,7 +39,6 @@ public class SquareColider : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("b");
                     playerrigi.velocity = Vector2.zero;
                     playerrigi.gravityScale = 0;
                     playeranimator.SetBool("IsWalling", true);
@@ -52,13 +50,11 @@ public class SquareColider : MonoBehaviour
             {
                 if(deltaY > 0)
                 {
-                    Debug.Log("c");
                     playeranimator.SetBool("IsGround", true);
                     playeranimator.SetBool("IsWalling", false);
                 }
                 else
                 {
-                    Debug.Log("d");
                     playerrigi.velocity = Vector2.zero;
                     playerrigi.gravityScale = 0;
                     playeranimator.SetBool("IsGround", false);
