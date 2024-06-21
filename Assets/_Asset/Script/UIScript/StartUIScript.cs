@@ -33,6 +33,7 @@ public class StartUIScript : MonoBehaviour
     {
         foreach (var poweruse in power)
         {
+            Debug.Log(poweruse.name);
             if (PlayerPrefs.HasKey(poweruse.name))
             {
                 poweruse.GetComponent<PickButton>().SetBuy(true);

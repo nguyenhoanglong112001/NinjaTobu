@@ -253,9 +253,4 @@ public class GameFlow : MonoBehaviour
             }
         }
     }
-
-    public bool CheckPlaying()
-    {
-        return isplaying;
-    }
 }

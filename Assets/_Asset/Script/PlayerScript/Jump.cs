@@ -18,12 +18,15 @@ public class Jump : MonoBehaviour
     [SerializeField] private float maxjump;
     private float jumpcount;
     public bool ismoving;
+    public bool jumping;
     [SerializeField] private MonkeyAttack mkatk;
     [SerializeField] private MonKeyCollect mkcollect;
     [SerializeField] private SoundManager manager;
     [SerializeField] private AudioSource JumpSound;
-    //private bool HasJumpFirst = false;
-    //public bool isjumppower;
+
+    private void Start()
+    {
+    }
     // Update is called once per frame
     void Update()
     {
@@ -50,6 +53,7 @@ public class Jump : MonoBehaviour
         if(groundcheck.IsGround)
         {
             ismoving = false;
+            jumping = false;
         }
         else if (!groundcheck.IsGround)
         {
@@ -88,7 +92,8 @@ public class Jump : MonoBehaviour
                     JumpSound.Play();
                     rig2d.velocity = new Vector2(direction.x * movespeed, direction.y * movespeed);// object se di chuyen theo huong duoc luot
                     jumpcount++;
-                    ismoving = true ;
+                    ismoving = true;
+                    jumping = true;
                     if (mkatk != null)
                     {
                         mkatk.SetAttack(false);
@@ -114,6 +119,7 @@ public class Jump : MonoBehaviour
                     JumpSound.Play();
                     rig2d.velocity = new Vector2(direction.x * movespeed, direction.y * movespeed);// object se di chuyen theo huong duoc luot
                     animator.SetTrigger("Jumping");
+                    jumping = true;
                     jumpcount++;
                     //HasJumpFirst = false;
                 }

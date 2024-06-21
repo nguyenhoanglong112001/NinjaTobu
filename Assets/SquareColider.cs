@@ -8,12 +8,15 @@ public class SquareColider : MonoBehaviour
     [SerializeField] private Animator playeranimator;
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private Rigidbody2D playerrigi;
+    [SerializeField] private Jump checkjump;
+
 
     private void Start()
     {
         playeranimator = GameObject.FindWithTag("Player").transform.GetChild(0).GetComponent<Animator>();
         sprite = GameObject.FindWithTag("Player").transform.GetChild(0).GetComponent<SpriteRenderer>();
         playerrigi = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
+        checkjump = GameObject.FindWithTag("Player").GetComponent<Jump>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -31,6 +34,7 @@ public class SquareColider : MonoBehaviour
             {
                 if(deltaX > 0)
                 {
+                    Debug.Log("a");
                     playerrigi.velocity = Vector2.zero;
                     playerrigi.gravityScale = 0;
                     playeranimator.SetBool("IsWalling", true);
@@ -39,6 +43,7 @@ public class SquareColider : MonoBehaviour
                 }
                 else
                 {
+                    Debug.Log("b");
                     playerrigi.velocity = Vector2.zero;
                     playerrigi.gravityScale = 0;
                     playeranimator.SetBool("IsWalling", true);
@@ -50,18 +55,25 @@ public class SquareColider : MonoBehaviour
             {
                 if(deltaY > 0)
                 {
+                    Debug.Log("c");
                     playeranimator.SetBool("IsGround", true);
                     playeranimator.SetBool("IsWalling", false);
                 }
                 else
                 {
+                    Debug.Log("d");
                     playerrigi.velocity = Vector2.zero;
                     playerrigi.gravityScale = 0;
-                    playeranimator.SetBool("IsGround", false);
-                    playeranimator.SetBool("IsDown", true);
-                    playeranimator.SetBool("IsWalling", false);
+                    if(!checkjump.ismoving)
+                    {
+                        playeranimator.SetBool("IsGround", false);
+                        playeranimator.SetBool("IsDown", true);
+                        playeranimator.SetBool("IsWalling", false);
+                    }    
                 }
             }
         }
     }
+
+
 }
