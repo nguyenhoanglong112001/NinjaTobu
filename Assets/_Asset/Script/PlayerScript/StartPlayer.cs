@@ -8,9 +8,14 @@ public class StartPlayer : MonoBehaviour
     [SerializeField] private GetIntData getdata;
     [SerializeField] private SpriteRenderer ninjasprite;
     [SerializeField] private Animator aniamtor;
+    [SerializeField] private SaveData save;
     // Start is called before the first frame update
     void Start()
     {
+        if(!PlayerPrefs.HasKey("equiped"))
+        {
+            save.SaveString("equiped", "Tobu");
+        }
         SetStart();
     }
 

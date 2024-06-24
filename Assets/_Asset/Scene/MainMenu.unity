@@ -11055,7 +11055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 72.88159, y: -1.2047119}
+  m_AnchoredPosition: {x: 72.88159, y: -1.2045898}
   m_SizeDelta: {x: -275.866, y: -127.6935}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &267996436
@@ -86106,7 +86106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -180.32135}
+  m_AnchoredPosition: {x: 0, y: -180.32153}
   m_SizeDelta: {x: 0, y: -952.1506}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1974516772
@@ -95813,6 +95813,7 @@ MonoBehaviour:
   rigi2d: {fileID: 3131652770646463044}
   anima: {fileID: 3131652770482804223}
   sprite: {fileID: 3131652770482804222}
+  gamemanager: {fileID: 0}
 --- !u!61 &3131652770646463064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -96427,3 +96428,4 @@ MonoBehaviour:
   getdata: {fileID: 1496351580}
   ninjasprite: {fileID: 3131652770482804222}
   aniamtor: {fileID: 3131652770482804223}
+  save: {fileID: 1496351581}

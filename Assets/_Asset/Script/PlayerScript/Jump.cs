@@ -22,9 +22,15 @@ public class Jump : MonoBehaviour
     [SerializeField] private MonKeyCollect mkcollect;
     [SerializeField] private SoundManager manager;
     [SerializeField] private AudioSource JumpSound;
+    private float gravity;
     //private bool HasJumpFirst = false;
     //public bool isjumppower;
     // Update is called once per frame
+
+    private void Start()
+    {
+        gravity = rig2d.gravityScale;
+    }
     void Update()
     {
         if(check.MonkeyAtkCheck())
@@ -97,6 +103,7 @@ public class Jump : MonoBehaviour
                     {
                         mkcollect.SetCollect(false);
                     }
+                    rig2d.gravityScale = gravity;
                     //HasJumpFirst = true;
                     animator.SetTrigger("IsRolling");
                 }
@@ -113,6 +120,7 @@ public class Jump : MonoBehaviour
                     manager.SetJumpSound();
                     JumpSound.Play();
                     rig2d.velocity = new Vector2(direction.x * movespeed, direction.y * movespeed);// object se di chuyen theo huong duoc luot
+                    rig2d.gravityScale = gravity;
                     animator.SetTrigger("Jumping");
                     jumpcount++;
                     //HasJumpFirst = false;
