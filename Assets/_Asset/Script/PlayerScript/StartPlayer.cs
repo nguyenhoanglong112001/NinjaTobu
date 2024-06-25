@@ -12,10 +12,6 @@ public class StartPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(!PlayerPrefs.HasKey("equiped"))
-        {
-            save.SaveString("equiped", "Tobu");
-        }
         SetStart();
     }
 

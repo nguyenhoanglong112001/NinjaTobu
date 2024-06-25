@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TigerForge;
 
 public class SaveData : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class SaveData : MonoBehaviour
     //[SerializeField] private int value;
     [SerializeField] private GetIntData getdata;
 
+    EasyFileSave myfile;
+    private List<string> characterbuy;
     public static SaveData instance { get; private set; }
     void Start()
     {
@@ -35,5 +38,10 @@ public class SaveData : MonoBehaviour
     public void SaveFloat(string keyname, float value)
     {
         PlayerPrefs.SetFloat(keyname, value);
+    }
+
+    public void SaveList(string character)
+    {
+        characterbuy.Add(character);
     }
 }

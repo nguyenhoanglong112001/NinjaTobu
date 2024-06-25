@@ -18,6 +18,9 @@ public class MenuFlow : MonoBehaviour
     [SerializeField] private CheckDistance checkdistance;
     [SerializeField] private List<MonoBehaviour> scriptCom;
 
+    [SerializeField] private ShopManager shopmanager;
+    [SerializeField] private SaveData data;
+
     private void GetCom()
     {
         player = GameObject.FindWithTag("Player").GetComponent<PlayerControll>();
@@ -82,10 +85,20 @@ public class MenuFlow : MonoBehaviour
         GetCom();
         Init();
     }
+    private void Saveconfig()
+    {
+        if (!PlayerPrefs.HasKey("equiped"))
+        {
+            shopmanager.SetCharacter(shopmanager.GetListCharacter()[0]);
+            shopmanager.SaveDataConfig();
+            data.Save("equied", 0);
+            data.SaveString("equiped", "Tobu");
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        Saveconfig();
     }
 
     // Update is called once per frame

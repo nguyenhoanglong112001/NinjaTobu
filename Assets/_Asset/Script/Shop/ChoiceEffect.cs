@@ -11,7 +11,7 @@ public class ChoiceEffect : MonoBehaviour
     [SerializeField] private AudioSource equipfail;
     [SerializeField] private GameObject comfirmUI;
     private bool isbuy;
-    private bool isequip;
+    [SerializeField] private bool isequip;
 
     public void SetChoice()
     {
@@ -23,11 +23,13 @@ public class ChoiceEffect : MonoBehaviour
                 if(shop.GetArr()[i] == gameObject)
                 {
                     shop.GetArr()[i].transform.GetChild(0).gameObject.SetActive(true);
+                    shop.GetArr()[i].GetComponent<ChoiceEffect>().isequip = true;
                     save.Save("Effect", i);
                 }
                 else
                 {
                     shop.GetArr()[i].transform.GetChild(0).gameObject.SetActive(false);
+                    shop.GetArr()[i].GetComponent<ChoiceEffect>().isequip = false;
                 }
             }
             equip.Play();
@@ -48,6 +50,7 @@ public class ChoiceEffect : MonoBehaviour
         save.SaveCoinData("currentcoin", -gameObject.GetComponent<SetCoin>().GetCost());
         comfirmUI.SetActive(false);
         equip.Play();
+        isequip = true;
     }
 
     public void DeclineButton()
@@ -89,5 +92,10 @@ public class ChoiceEffect : MonoBehaviour
     public void SetBuy(bool check)
     {
         isbuy = check;
+    }
+
+    public bool CheckEquip()
+    {
+        return isequip;
     }
 }
