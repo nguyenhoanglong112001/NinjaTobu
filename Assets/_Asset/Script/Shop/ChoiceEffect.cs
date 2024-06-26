@@ -67,6 +67,16 @@ public class ChoiceEffect : MonoBehaviour
             {
                 comfirmUI.SetActive(true);
                 equip.Play();
+                for (int i = 1; i < shop.GetArr().Length; i++)
+                {
+                    if (shop.GetArr()[i] != gameObject)
+                    {
+                        if(shop.GetArr()[i].transform.GetChild(7).gameObject.activeSelf)
+                        {
+                            shop.GetArr()[i].transform.GetChild(7).gameObject.SetActive(false);
+                        }    
+                    }
+                }
             }
             else
             {

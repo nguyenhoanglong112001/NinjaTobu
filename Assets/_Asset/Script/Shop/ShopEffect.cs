@@ -54,19 +54,16 @@ public class ShopEffect : MonoBehaviour
 
     public void EffectChoice()
     {
-        if(effect.GetComponent<ChoiceEffect>().CheckEquip())
+        if (effectprefab == null)
         {
-            if (effectprefab == null)
-            {
-                effectprefab = Instantiate(effect, playerposition.position, Quaternion.identity);
-                effectprefab.transform.SetParent(playerposition);
-            }
-            else if (effectprefab != null)
-            {
-                Destroy(effectprefab);
-                effectprefab = Instantiate(effect, playerposition.position, Quaternion.identity);
-                effectprefab.transform.SetParent(playerposition);
-            }
+            effectprefab = Instantiate(effect, playerposition.position, Quaternion.identity);
+            effectprefab.transform.SetParent(playerposition);
+        }
+        else if (effectprefab != null)
+        {
+            Destroy(effectprefab);
+            effectprefab = Instantiate(effect, playerposition.position, Quaternion.identity);
+            effectprefab.transform.SetParent(playerposition);
         }
     }
 }
