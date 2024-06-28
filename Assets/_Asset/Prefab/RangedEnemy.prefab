@@ -254,7 +254,7 @@ MonoBehaviour:
   objprefab: {fileID: 5584845833584468366, guid: d21c0249e42c315489f98df726f88cb7, type: 3}
   shootpoint: {fileID: 6964776856989914910}
   shootdelay: 5
-  bullet: {fileID: 0}
+  bulletpooler: {fileID: 11400000, guid: ed9a5c4a20051a143b570b7755f84ab9, type: 2}
 --- !u!114 &170334365708459338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3986681529841102386
 Transform:
   m_ObjectHideFlags: 0

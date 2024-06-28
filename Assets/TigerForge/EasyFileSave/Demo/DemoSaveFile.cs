@@ -2,7 +2,7 @@
 using UnityEngine;
 using TigerForge;
 
-public class Demo : MonoBehaviour
+public class DemoSaveFile : MonoBehaviour
 {
 
     // Instance of Easy File Save

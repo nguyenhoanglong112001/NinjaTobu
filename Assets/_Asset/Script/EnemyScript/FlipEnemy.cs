@@ -31,6 +31,5 @@ public class FlipEnemy : MonoBehaviour
     private void OnDisable()
     {
         StopAllCoroutines();
-        Debug.Log(1);
     }
 }

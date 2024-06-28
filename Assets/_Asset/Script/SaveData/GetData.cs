@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetIntData : MonoBehaviour
+public class GetData : MonoBehaviour
 {
-    public int GetData(string keyname,int value)
+    public int GetIntData(string keyname,int value)
     {
         return PlayerPrefs.GetInt(keyname, value);
     }

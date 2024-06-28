@@ -7,7 +7,7 @@ public class SetGameStart : MonoBehaviour
     [SerializeField] private SpriteAnimator listcharacter;
     [SerializeField] private SpriteRenderer ninja;
     [SerializeField] private Animator ninjaanimator;
-    [SerializeField] private GetIntData getdata;
+    [SerializeField] private GetData getdata;
     [SerializeField] private SoundManager sound;
     [SerializeField] private Jump jumpspeed;
     [SerializeField] private PlayerDetection knockback;
@@ -27,7 +27,7 @@ public class SetGameStart : MonoBehaviour
 
     private void SetStart()
     {
-        int index = getdata.GetData("equied",0);
+        int index = getdata.GetIntData("equied",0);
         ninja.sprite = listcharacter.GetSpriteList()[index];
         ninjaanimator.runtimeAnimatorController = listcharacter.GetAnimatorlist()[index];
         jumpspeed.SetSpeed(getdata.GetFloatData("speed", 0));
@@ -37,7 +37,7 @@ public class SetGameStart : MonoBehaviour
         sound.SetJumpSoundClip(listcharacter.GetJumpClips()[index]);
         sound.SetDeathSound(listcharacter.GetDeathClips()[index]);
         sound.SetSoundAttack(listcharacter.GetattackClips()[index]);
-        var effect = getdata.GetData("Effect", 0);
+        var effect = getdata.GetIntData("Effect", 0);
         var Effectpre = Instantiate(listcharacter.GetListEffect()[effect], playerposition.position, Quaternion.identity);
         Effectpre.transform.SetParent(playerposition);
     }

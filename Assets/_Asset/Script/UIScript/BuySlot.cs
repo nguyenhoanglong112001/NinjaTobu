@@ -11,7 +11,7 @@ public class BuySlot : MonoBehaviour
     [SerializeField] private GameObject Slot2;
     [SerializeField] private SaveData savedata;
     [SerializeField] private CheckSlotPower slotadd;
-    [SerializeField] private GetIntData getcoin;
+    [SerializeField] private GetData getcoin;
     [SerializeField] private SaveData data;
     [SerializeField] private SetPrice price;
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class BuySlot : MonoBehaviour
     }    
     public void UnLockSlot2()
     {
-        var currentcoin = getcoin.GetData("currentcoin", 0);
+        var currentcoin = getcoin.GetIntData("currentcoin", 0);
         if(currentcoin > price.GetPrice())
         {
             if (!Slot1.GetComponent<UnlockSlot>().GetUnlock())
@@ -48,7 +48,7 @@ public class BuySlot : MonoBehaviour
 
     public void UnlockSlot3()
     {
-        var currentcoin = getcoin.GetData("currentcoin", 0);
+        var currentcoin = getcoin.GetIntData("currentcoin", 0);
         if (currentcoin > price.GetPrice())
         {
             if (!Slot2.GetComponent<UnlockSlot>().GetUnlock())

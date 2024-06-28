@@ -8,7 +8,7 @@ public class SaveData : MonoBehaviour
     // Start is called before the first frame update
     //[SerializeField] private string keyname;
     //[SerializeField] private int value;
-    [SerializeField] private GetIntData getdata;
+    [SerializeField] private GetData getdata;
 
     EasyFileSave myfile;
     private List<string> characterbuy;
@@ -30,7 +30,7 @@ public class SaveData : MonoBehaviour
 
     public void SaveCoinData(string keyname, int value)
     {
-        int currentcoin = getdata.GetData(keyname, 0);
+        int currentcoin = getdata.GetIntData(keyname, 0);
         currentcoin += value;
         PlayerPrefs.SetInt(keyname, currentcoin);
     }

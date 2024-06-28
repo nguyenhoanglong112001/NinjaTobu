@@ -10,7 +10,7 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private Sprite imagecharacter;
     [SerializeField] private RuntimeAnimatorController animatorchoice;
     [SerializeField] private GameObject[] listcharacter;
-    [SerializeField] private GetIntData objequiped;
+    [SerializeField] private GetData objequiped;
     [SerializeField] private GameObject ninja;
     [SerializeField] private Sprite shuriken;
     [SerializeField] private Sprite defaultshuriken;

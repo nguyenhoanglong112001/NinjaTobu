@@ -5,7 +5,7 @@ using UnityEngine;
 public class CheckCoin : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private GetIntData coin;
+    [SerializeField] private GetData coin;
     void Start()
     {
         
@@ -18,7 +18,7 @@ public class CheckCoin : MonoBehaviour
     }
     public bool CoinCheck(int price)
     {
-        if (coin.GetData("currentcoin", 0) >= price)
+        if (coin.GetIntData("currentcoin", 0) >= price)
         {
             return true;
         }

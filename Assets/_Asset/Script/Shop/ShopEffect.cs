@@ -9,7 +9,7 @@ public class ShopEffect : MonoBehaviour
     [SerializeField] private GameObject effect;
     private GameObject effectprefab;
     [SerializeField] private GameObject[] listeffect;
-    [SerializeField] private GetIntData getdata;
+    [SerializeField] private GetData getdata;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +49,7 @@ public class ShopEffect : MonoBehaviour
                 e.GetComponent<ChoiceEffect>().SetBuy(true);
             }
         }
-        listeffect[getdata.GetData("Effect", 0)].GetComponent<ChoiceEffect>().SetChoice();
+        listeffect[getdata.GetIntData("Effect", 0)].GetComponent<ChoiceEffect>().SetChoice();
     }
 
     public void EffectChoice()

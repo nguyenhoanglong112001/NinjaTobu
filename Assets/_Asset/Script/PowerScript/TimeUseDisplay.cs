@@ -7,7 +7,7 @@ public class TimeUseDisplay : MonoBehaviour
 {
     [SerializeField] private int timeuse;
     [SerializeField] private Text timedisplay;
-    [SerializeField] private GetIntData data;
+    [SerializeField] private GetData data;
     [SerializeField] private SaveData savedata;
     [SerializeField] private PickButton checkbuy;
     private float timer;
@@ -16,7 +16,7 @@ public class TimeUseDisplay : MonoBehaviour
     {
         if(PlayerPrefs.HasKey(gameObject.name))
         {
-            timeuse = data.GetData(gameObject.name, 0);
+            timeuse = data.GetIntData(gameObject.name, 0);
         }
     }
 

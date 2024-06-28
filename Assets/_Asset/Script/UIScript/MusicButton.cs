@@ -9,10 +9,10 @@ public class MusicButton : MonoBehaviour
     [SerializeField] private GameObject off;
     [SerializeField] private bool ismusicon;
     [SerializeField] private SaveData savesetting;
-    [SerializeField] private GetIntData data;
+    [SerializeField] private GetData data;
     void Start()
     {
-        if(data.GetData("music",0) == 0)
+        if(data.GetIntData("music",0) == 0)
         {
             ismusicon = false;
         }

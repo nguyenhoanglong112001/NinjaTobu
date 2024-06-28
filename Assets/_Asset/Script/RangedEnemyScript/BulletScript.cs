@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using TigerForge;
 
 public class BulletScript : MonoBehaviour
 {
@@ -7,13 +8,33 @@ public class BulletScript : MonoBehaviour
     [SerializeField] private Rigidbody2D rig2d;
     [SerializeField] private PowerCheck powercheck;
     [SerializeField] private float speed;
+    private Vector3 direction;
 
     private void Start()
     {
         powercheck = GameObject.FindWithTag("Player").GetComponent<PowerCheck>();
         firepoint = GameObject.FindWithTag("FirePoint");
-        Vector3 direction = firepoint.transform.position - transform.position;
-        rig2d.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
+        if (firepoint != null)
+        {
+            direction = firepoint.transform.position - transform.position;
+            rig2d.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
+        }
+    }
+
+    private void Update()
+    {
+    }
+
+    private void OnEnable()
+    {
+        if (firepoint != null)
+        {
+            direction = firepoint.transform.position - transform.position;
+            rig2d.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
+            Debug.Log("direction = " + direction);
+            Debug.Log("firepoint = " + firepoint.transform.position);
+            Debug.Log("Object point = " + transform.position);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,8 +43,9 @@ public class BulletScript : MonoBehaviour
         {
             return;
         }
-        Destroy(gameObject);
-        if(collision.CompareTag("Player"))
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
+        if (collision.CompareTag("Player"))
         {
             if(powercheck.BulletProofCheck())
             {
@@ -31,7 +53,7 @@ public class BulletScript : MonoBehaviour
             }
             else
             {
-                collision.GetComponent<PlayerControll>().Death();
+                //collision.GetComponent<PlayerControll>().Death();
             }
         }
     }

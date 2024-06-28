@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class CoinUI : MonoBehaviour
 {
     [SerializeField] private Text currentcointtext;
-    [SerializeField] private GetIntData getdata;
+    [SerializeField] private GetData getdata;
     [SerializeField] private int currentcoin;
     // Start is called before the first frame update
     void Awake()
     {
-        getdata = GameObject.FindWithTag("Data").GetComponent<GetIntData>();
+        getdata = GameObject.FindWithTag("Data").GetComponent<GetData>();
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class CoinUI : MonoBehaviour
 
     private void SetTextcoin()
     {
-        currentcoin = getdata.GetData("currentcoin", 0);
+        currentcoin = getdata.GetIntData("currentcoin", 0);
         currentcointtext.text = currentcoin.ToString();
     }
 }

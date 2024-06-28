@@ -5,7 +5,7 @@ using UnityEngine;
 public class StartPlayer : MonoBehaviour
 {
     [SerializeField] private ShopManager listcharacter;
-    [SerializeField] private GetIntData getdata;
+    [SerializeField] private GetData getdata;
     [SerializeField] private SpriteRenderer ninjasprite;
     [SerializeField] private Animator aniamtor;
     [SerializeField] private SaveData save;

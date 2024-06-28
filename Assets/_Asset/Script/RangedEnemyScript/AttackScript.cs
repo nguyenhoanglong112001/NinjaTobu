@@ -21,6 +21,8 @@ public class AttackScript : MonoBehaviour
     private bool isalaert = false;
     [SerializeField] private FlipEnemy flip;
     private float angle;
+    private bool isaiming;
+    private float timeelaspe = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,7 @@ public class AttackScript : MonoBehaviour
         var aimranged = Physics2D.CircleCast(aimrange.position, aimradius, transform.position, 0.0f, targetlayer);
         if (aimranged.collider != null && warningstate)
         {
+            isaiming = true;
             Vector2 dir = head.position - target.position;
             if (dir.x < 0)
             {
@@ -57,18 +60,21 @@ public class AttackScript : MonoBehaviour
             }
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             head.rotation = Quaternion.RotateTowards(head.rotation, rotation, speed * Time.deltaTime);
-            StartCoroutine(ScaleDown());
-            InvokeRepeating("Shoot", 3.0f, timedelay);
+            ScaleDown2();
         }
         else
         {
             warningstate = false;
             anima.SetBool("IsEnemy", false);
-            CancelInvoke("Shoot");
             isalaert = false;
-            StopCoroutine(StartCoroutine(ScaleDown()));
+            StopAllCoroutines();
             cone.gameObject.SetActive(false);
+            ResetShoot();
             flip.enabled = true;
+            if (cone.localScale.y <= 0.01)
+            {
+                launch.Shoot();
+            }
         }
     }
 
@@ -90,6 +96,7 @@ public class AttackScript : MonoBehaviour
 
     IEnumerator ScaleDown()
     {
+        Debug.Log("StartLoop");
         cone.gameObject.SetActive(true);
         float timeelapse = 0f;
         while (timeelapse < timedelay)
@@ -97,19 +104,42 @@ public class AttackScript : MonoBehaviour
             float time = timeelapse / timedelay;
             float ScaleY = Mathf.Lerp(1f, 0f, time);
             cone.localScale = new Vector3(cone.localScale.x, ScaleY, cone.localScale.z);
-
             timeelapse += Time.deltaTime;
-
             yield return null;
         }
         cone.localScale = new Vector3(cone.localScale.x, 1.0f, cone.localScale.z);
         StartCoroutine(ScaleDown());
     }
-    private void OnDrawGizmos()
+
+    private void ScaleDown2()
     {
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(findpoint.position, findranged);
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(aimrange.position, aimradius);
+        if(isaiming)
+        {
+            cone.gameObject.SetActive(true);
+            timeelaspe += Time.deltaTime;
+            float ScaleY = Mathf.Lerp(1f, 0f, timeelaspe / timedelay);
+            cone.localScale = new Vector3(cone.localScale.x, ScaleY, cone.localScale.z);
+            if(ScaleY <= 0.0f)
+            {
+                launch.Shoot();
+                ResetShoot();
+            }
+            //while (timeelapse < timedelay)
+            //{
+            //    float time = timeelapse / timedelay;
+            //    float ScaleY = Mathf.Lerp(1f, 0f, time);
+            //    cone.localScale = new Vector3(cone.localScale.x, ScaleY, cone.localScale.z);
+            //    timeelapse += Time.deltaTime;
+            //}
+            //cone.localScale = new Vector3(cone.localScale.x, 1.0f, cone.localScale.z);
+            //StartCoroutine(ScaleDown());
+        }
+    }    
+
+    private void ResetShoot()
+    {
+        isaiming = false;
+        timeelaspe = 0.0f;
+        cone.localScale = new Vector3(cone.localScale.x, 1.0f, cone.localScale.z);
     }
 }

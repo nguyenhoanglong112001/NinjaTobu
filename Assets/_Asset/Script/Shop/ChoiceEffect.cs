@@ -5,7 +5,7 @@ public class ChoiceEffect : MonoBehaviour
     [SerializeField] private ShopEffect shop;
     private GameObject effectprefab;
     [SerializeField] private Transform playerposition;
-    [SerializeField] private GetIntData data;
+    [SerializeField] private GetData data;
     [SerializeField] private SaveData save;
     [SerializeField] private AudioSource equip;
     [SerializeField] private AudioSource equipfail;
@@ -63,7 +63,7 @@ public class ChoiceEffect : MonoBehaviour
     {
         if(isbuy == false)
         {
-            if (data.GetData("currentcoin", 0) >= gameObject.GetComponent<SetCoin>().GetCost())
+            if (data.GetIntData("currentcoin", 0) >= gameObject.GetComponent<SetCoin>().GetCost())
             {
                 comfirmUI.SetActive(true);
                 equip.Play();

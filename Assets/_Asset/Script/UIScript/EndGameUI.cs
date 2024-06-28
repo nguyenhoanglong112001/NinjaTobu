@@ -17,7 +17,7 @@ public class EndGameUI : MonoBehaviour
     [SerializeField] private GamePoint score;
     [SerializeField] private Text scoretext;
     [SerializeField] private SaveData highscore;
-    [SerializeField] private GetIntData currenthighscore;
+    [SerializeField] private GetData currenthighscore;
     [SerializeField] private GameObject MonkeyRed;
     void Start()
     {
@@ -42,7 +42,7 @@ public class EndGameUI : MonoBehaviour
         coin.text = totalcoin.ToString();
         killshow.text = totalkills.ToString();
         scoretext.text = Mathf.Round(score.GetScore()).ToString();
-        if (score.GetScore() > currenthighscore.GetData("highscore",0))
+        if (score.GetScore() > currenthighscore.GetIntData("highscore",0))
         {
             highscore.Save("highscore", (int)Mathf.Round(score.GetScore()));
             if(Social.localUser.authenticated)

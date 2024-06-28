@@ -32,7 +32,7 @@ public class GameFlow : MonoBehaviour
     [SerializeField] private GameObject CoinUI;
 
     [SerializeField] private SaveData data;
-    [SerializeField] private GetIntData getdata;
+    [SerializeField] private GetData getdata;
     [SerializeField] private CoinUpdate cointotal;
     [SerializeField] private CoinUI coinui;
 
@@ -169,12 +169,12 @@ public class GameFlow : MonoBehaviour
         GameUI.SetActive(false);
         CoinUI.SetActive(true);
         data.Save("coin", cointotal.GetTotalCoin());
-        data.SaveCoinData("currentcoin", getdata.GetData("coin", 0));
+        data.SaveCoinData("currentcoin", getdata.GetIntData("coin", 0));
         foreach (var slot in checkslot.GetPowerArr())
         {
             if (PlayerPrefs.HasKey(slot.name))
             {
-                int timeuse = getdata.GetData(slot.name, 0);
+                int timeuse = getdata.GetIntData(slot.name, 0);
                 timeuse -= timeplaying;
                 data.Save(slot.name, timeuse);
             }

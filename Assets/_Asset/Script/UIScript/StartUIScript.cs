@@ -5,7 +5,7 @@ using UnityEngine;
 public class StartUIScript : MonoBehaviour
 {
     [SerializeField] private CheckSlotPower slotpower;
-    [SerializeField] private GetIntData getdata;
+    [SerializeField] private GetData getdata;
     [SerializeField] private GameObject[] power;
     // Start is called before the first frame update
 
