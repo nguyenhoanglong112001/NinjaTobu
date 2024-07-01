@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6964776856989914910}
   m_Layer: 9
   m_Name: Firepoint
-  m_TagString: Untagged
+  m_TagString: FirePoint
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 6964776857021273719}
   - component: {fileID: 6964776857021273726}
   - component: {fileID: 170334365708459338}
+  - component: {fileID: -2192320427967867725}
   m_Layer: 9
   m_Name: RangedEnemy
   m_TagString: Enemy
@@ -253,8 +254,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objprefab: {fileID: 5584845833584468366, guid: d21c0249e42c315489f98df726f88cb7, type: 3}
   shootpoint: {fileID: 6964776856989914910}
+  firepoint: {fileID: 6964776856989914905}
+  aimpoint: {fileID: 6964776857361760265}
+  speed: 600
   shootdelay: 5
-  bulletpooler: {fileID: 11400000, guid: ed9a5c4a20051a143b570b7755f84ab9, type: 2}
+  pooler: {fileID: -2192320427967867725}
 --- !u!114 &170334365708459338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +273,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spirte: {fileID: 6964776857021273712}
   timedelay: 5
+--- !u!114 &-2192320427967867725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6964776857021274509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea08375da243a441b88d1e6b0713006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5584845833584468366, guid: d21c0249e42c315489f98df726f88cb7, type: 3}
+  notification: 3
+  strategy: 0
+  preload: 0
+  capacity: 0
+  recycle: 0
+  persist: 0
+  stamp: 0
+  warnings: 1
+  spawnedClonesList: []
+  despawnedClones: []
+  delays: []
+  deactivatedChild: {fileID: 0}
 --- !u!1 &6964776857132183869
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +424,7 @@ GameObject:
   - component: {fileID: 6964776857361760270}
   m_Layer: 9
   m_Name: aimpoint
-  m_TagString: FirePoint
+  m_TagString: AimPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

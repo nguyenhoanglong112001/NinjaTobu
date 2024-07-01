@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TigerForge;
+using Lean.Pool;
 
 public class Launch : MonoBehaviour
 {
     [SerializeField] private GameObject objprefab;
     [SerializeField] private Transform shootpoint;
+    [SerializeField] private GameObject firepoint;
+    [SerializeField] private GameObject aimpoint;
+    [SerializeField] private float speed;
     [SerializeField] private float shootdelay;
-    [SerializeField] private EPObjectPoolerScriptableObject bulletpooler;
+    [SerializeField] private LeanGameObjectPool pooler;
     private bool IsShoot = false;
     // Start is called before the first frame update
     void Start()
@@ -18,21 +21,19 @@ public class Launch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void Shoot()
     {
-        GameObject bullet = bulletpooler.GetObject();
-        bullet.transform.position = shootpoint.position;
-        //if (bullet == null /*&& !IsShoot*/)
-        //{
-        //    bullet = Instantiate(objprefab, shootpoint.position, Quaternion.identity);
-        //    //IsShoot = true;
-        //    //Invoke("ResetShoot", shootdelay);
-        //    //bullet = bulletpooler.GetObject();
-        //    //bullet.transform.position = shootpoint.position;
-        //    //IsShoot = true;
-        //    //Invoke("ResetShoot", shootdelay);
-        //}
+        //pooler.Spawn(shootpoint.position);
+        GameObject bullet = pooler.Spawn(shootpoint.position,Quaternion.identity);
+
+        Rigidbody2D bulletrigi = bullet.GetComponent<Rigidbody2D>();
+
+        if (bulletrigi != null)
+        {
+            var direction = aimpoint.transform.position - firepoint.transform.position;
+            bulletrigi.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
+        }
     }
 }

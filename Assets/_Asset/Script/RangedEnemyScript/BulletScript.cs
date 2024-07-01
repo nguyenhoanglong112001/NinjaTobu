@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using TigerForge;
+using Lean.Pool;
 
 public class BulletScript : MonoBehaviour
 {
     [SerializeField] private GameObject target;
     [SerializeField] private GameObject firepoint;
+    [SerializeField] private GameObject aimpoint;
     [SerializeField] private Rigidbody2D rig2d;
     [SerializeField] private PowerCheck powercheck;
     [SerializeField] private float speed;
@@ -13,12 +15,14 @@ public class BulletScript : MonoBehaviour
     private void Start()
     {
         powercheck = GameObject.FindWithTag("Player").GetComponent<PowerCheck>();
-        firepoint = GameObject.FindWithTag("FirePoint");
-        if (firepoint != null)
-        {
-            direction = firepoint.transform.position - transform.position;
-            rig2d.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
-        }
+        //firepoint = GameObject.FindWithTag("FirePoint");
+        //aimpoint = GameObject.FindWithTag("AimPoint");
+        //if (firepoint != null)
+        //{
+        //    direction = aimpoint.transform.position - firepoint.transform.position;
+        //    rig2d.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
+        //    Debug.Log(direction);
+        //}
     }
 
     private void Update()
@@ -27,14 +31,12 @@ public class BulletScript : MonoBehaviour
 
     private void OnEnable()
     {
-        if (firepoint != null)
-        {
-            direction = firepoint.transform.position - transform.position;
-            rig2d.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
-            Debug.Log("direction = " + direction);
-            Debug.Log("firepoint = " + firepoint.transform.position);
-            Debug.Log("Object point = " + transform.position);
-        }
+        //if (firepoint != null)
+        //{
+        //    direction = aimpoint.transform.position - firepoint.transform.position;
+        //    rig2d.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
+        //    Debug.Log(direction);
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,7 +46,8 @@ public class BulletScript : MonoBehaviour
             return;
         }
         //Destroy(gameObject);
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        LeanPool.Despawn(gameObject);
         if (collision.CompareTag("Player"))
         {
             if(powercheck.BulletProofCheck())
