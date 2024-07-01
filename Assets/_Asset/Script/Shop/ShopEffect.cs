@@ -14,6 +14,10 @@ public class ShopEffect : MonoBehaviour
     void Start()
     {
         listeffect[0].GetComponent<ChoiceEffect>().SetBuy(true);
+        if(PlayerPrefs.HasKey("Effect"))
+        {
+            listeffect[0].GetComponent<ChoiceEffect>().SetChoice();
+        }    
         SetStart();
     }
 

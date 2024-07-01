@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Lean.Pool;
 
 public class Shuriken : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Shuriken : MonoBehaviour
     private GameObject shurikenleft;
     private GameObject shurikenright;
     [SerializeField] private float speed;
+    [SerializeField] private LeanGameObjectPool shurikenpool;
 
     public void SetShurikenSprite(Sprite shurikensprite)
     {
@@ -23,24 +25,40 @@ public class Shuriken : MonoBehaviour
 
     public void LaunchShuriken()
     {
-        if(shurikendown == null && shurikenleft == null && shurikenright == null && shurikenup == null)
-        {
-            shurikenup = Instantiate(shuriken, point[0].position, Quaternion.identity);
-            Rigidbody2D shuriup = shurikenup.GetComponent<Rigidbody2D>();
-            shuriup.velocity = Vector2.up * speed;
+        //if(shurikendown == null && shurikenleft == null && shurikenright == null && shurikenup == null)
+        //{
+        //    shurikenup = Instantiate(shuriken, point[0].position, Quaternion.identity);
+        //    Rigidbody2D shuriup = shurikenup.GetComponent<Rigidbody2D>();
+        //    shuriup.velocity = Vector2.up * speed;
 
-            shurikendown = Instantiate(shuriken, point[1].position, Quaternion.identity);
-            Rigidbody2D shuridown = shurikendown.GetComponent<Rigidbody2D>();
-            shuridown.velocity = Vector2.down * speed;
+        //    shurikendown = Instantiate(shuriken, point[1].position, Quaternion.identity);
+        //    Rigidbody2D shuridown = shurikendown.GetComponent<Rigidbody2D>();
+        //    shuridown.velocity = Vector2.down * speed;
 
-            shurikenleft = Instantiate(shuriken, point[2].position, Quaternion.identity);
-            Rigidbody2D shurileft = shurikenleft.GetComponent<Rigidbody2D>();
-            shurileft.velocity = Vector2.left * speed;
+        //    shurikenleft = Instantiate(shuriken, point[2].position, Quaternion.identity);
+        //    Rigidbody2D shurileft = shurikenleft.GetComponent<Rigidbody2D>();
+        //    shurileft.velocity = Vector2.left * speed;
 
-            shurikenright = Instantiate(shuriken, point[3].position, Quaternion.identity);
-            Rigidbody2D shuriright = shurikenright.GetComponent<Rigidbody2D>();
-            shuriright.velocity = Vector2.right * speed;
-            shurikenright.GetComponent<SpriteRenderer>().flipX = true;
-        }
+        //    shurikenright = Instantiate(shuriken, point[3].position, Quaternion.identity);
+        //    Rigidbody2D shuriright = shurikenright.GetComponent<Rigidbody2D>();
+        //    shuriright.velocity = Vector2.right * speed;
+        //    shurikenright.GetComponent<SpriteRenderer>().flipX = true;
+        //}
+        shurikenup = shurikenpool.Spawn(point[0].position, Quaternion.identity);
+        Rigidbody2D shuriup = shurikenup.GetComponent<Rigidbody2D>();
+        shuriup.velocity = Vector2.up * speed;
+
+        shurikendown = shurikenpool.Spawn(point[1].position, Quaternion.identity);
+        Rigidbody2D shuridown = shurikendown.GetComponent<Rigidbody2D>();
+        shuridown.velocity = Vector2.down * speed;
+
+        shurikenleft = shurikenpool.Spawn(point[2].position, Quaternion.identity);
+        Rigidbody2D shurileft = shurikenleft.GetComponent<Rigidbody2D>();
+        shurileft.velocity = Vector2.left * speed;
+
+        shurikenright = shurikenpool.Spawn(point[3].position, Quaternion.identity);
+        Rigidbody2D shuriright = shurikenright.GetComponent<Rigidbody2D>();
+        shuriright.velocity = Vector2.right * speed;
+        shurikenright.GetComponent<SpriteRenderer>().flipX = true;
     }
 }

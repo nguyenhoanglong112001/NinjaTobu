@@ -15,29 +15,12 @@ public class BulletScript : MonoBehaviour
     private void Start()
     {
         powercheck = GameObject.FindWithTag("Player").GetComponent<PowerCheck>();
-        //firepoint = GameObject.FindWithTag("FirePoint");
-        //aimpoint = GameObject.FindWithTag("AimPoint");
-        //if (firepoint != null)
-        //{
-        //    direction = aimpoint.transform.position - firepoint.transform.position;
-        //    rig2d.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
-        //    Debug.Log(direction);
-        //}
     }
 
     private void Update()
     {
     }
 
-    private void OnEnable()
-    {
-        //if (firepoint != null)
-        //{
-        //    direction = aimpoint.transform.position - firepoint.transform.position;
-        //    rig2d.velocity = new Vector2(direction.x, direction.y).normalized * speed * Time.deltaTime;
-        //    Debug.Log(direction);
-        //}
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -45,8 +28,6 @@ public class BulletScript : MonoBehaviour
         {
             return;
         }
-        //Destroy(gameObject);
-        //gameObject.SetActive(false);
         LeanPool.Despawn(gameObject);
         if (collision.CompareTag("Player"))
         {
@@ -56,7 +37,7 @@ public class BulletScript : MonoBehaviour
             }
             else
             {
-                //collision.GetComponent<PlayerControll>().Death();
+                collision.GetComponent<PlayerControll>().Death();
             }
         }
     }
